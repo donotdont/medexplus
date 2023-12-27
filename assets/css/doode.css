@@ -1,0 +1,196 @@
+h1.hhh {}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: rgb(165, 162, 162);
+}
+
+.Showbox {
+    margin-top: 100px;
+}
+
+.tab-content {
+    margin-left: 200px;
+
+}
+
+.font-of-H{
+    font-weight: 100;
+    color: #9ea1a4;
+    text-transform: uppercase;
+}
+
+.boxPro {
+    padding: 20px;
+    border-radius: 40px;
+    text-align: center;
+    margin-top: 100px;
+    border-style: solid;
+    border-color: rgb(189, 189, 189);
+    height: 540px;
+}
+
+.onefooter {
+    height: 380px;
+    background-color: #f2f2f2;
+    margin-top: 50px;
+    padding-top: 80px;
+}
+
+
+.Lfooter {
+    height: 50px;
+    background-color: rgb(251, 251, 251);
+    padding-top: 15px;
+}
+
+.nav {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: #9ea1a4 !important;
+    --bs-nav-link-hover-color: var(--bs-link-hover-color);
+    --bs-nav-link-disabled-color: var(--bs-secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+/* .navbar-brand  */
+.navbar-collapse {
+  background-color: transparent !important;}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: #dc3545 !important;
+}
+
+
+.ourteam {
+    padding: 60px;
+    border-radius: 50px;
+}
+
+
+.card-img-top {
+    border-radius: 200px;
+    width: 90%;
+}
+
+.nav-pills .nav-link.active {
+    background-color: rgb(165, 162, 162);
+    margin-top: 10px;
+
+}
+
+.radi.img {
+    border-radius: 20px;
+}
+
+.tab-content>.active {
+    display: block;
+    text-align: center;
+    margin-left: 300px;
+}
+
+
+
+.fontsom {
+    color: #f5a200;
+    text-align: justify;
+    margin-left: -200px;
+
+}
+
+.Productbox {
+    margin-top: 100px;
+}
+
+.tab-sy {
+    width: 40%;
+}
+
+.tab-content {
+    text-align: justify;
+}
+
+.fontH {
+    color: black;
+}
+
+.fontP {
+    color: #adadad;
+}
+
+.photo1 {
+    border-radius: 20px;
+    text-align: center;
+    width: 80%;
+    margin-left: 50px;
+}
+
+.tab-content>.active {
+    display: block;
+    text-align: center;
+    margin-left: 250px  !important;
+}
+
+.covermagin{
+    background-color:#ffffff;
+}
+
+.covermagin:hover{
+    background-color: #ffffff;
+}
+   
+
+.about-us{
+    height: 900px;
+    background-color: #f7d0d0;
+}
+
+.contact-box{
+   
+    background-color: #ffffff;
+}
+
+
+.footerBOX{
+    background-color:#f2f2f2 ;
+}
+
+.footerbar
+{
+    background-color: rgb(251, 251, 251);
+}
+
+.map{
+    background-color: rgb(255, 255, 255);
+    margin-top: 230px;
+    margin-bottom: 20px;
+    /* width: 60%; */
+    /* height: 500px; */
+}
+
+.det-map{
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    margin-top: 100px;
+}
+
+.det-map2{
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    margin-top: 100px;
+}
+
+.card-body{
+    margin-top: 35px;
+}
+
+.imgceo{
+    margin-top: 40px;
+    margin-left: 20px;
+}
