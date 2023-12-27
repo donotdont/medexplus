@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: text/html; charset=UTF-8');
-$version = "0.0.2";
+$version = "0.0.3";
 $request = urldecode($_SERVER['REQUEST_URI']);
 $urls = explode("/", $request);
 

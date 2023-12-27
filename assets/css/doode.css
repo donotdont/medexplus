@@ -154,6 +154,7 @@ h1.hhh {}
 .contact-box{
    
     background-color: #ffffff;
+    margin-top: 200px;
 }
 
 
@@ -168,10 +169,7 @@ h1.hhh {}
 
 .map{
     background-color: rgb(255, 255, 255);
-    margin-top: 230px;
-    margin-bottom: 20px;
-    /* width: 60%; */
-    /* height: 500px; */
+ 
 }
 
 .det-map{
@@ -193,4 +191,11 @@ h1.hhh {}
 .imgceo{
     margin-top: 40px;
     margin-left: 20px;
+}
+
+.box-aboustus{
+    height:700px; 
+    background: #ffffff;
+    margin-top: 100px;
+
 }
