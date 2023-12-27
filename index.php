@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: text/html; charset=UTF-8');
-$version = "0.0.3";
+$version = "0.0.7";
 $request = urldecode($_SERVER['REQUEST_URI']);
 $urls = explode("/", $request);
 
@@ -11,9 +11,9 @@ if (!empty($request)) {
         require __DIR__ . '/views/header.php';
         require __DIR__ . '/views/product.php';
         require __DIR__ . '/views/footer.php';
-    } else if (!empty($urls[1]) && ($urls[1] == 'contact')) {
+    } else if (!empty($urls[1]) && ($urls[1] == 'pdf-quatation')) {
         require __DIR__ . '/views/header.php';
-        require __DIR__ . '/views/contact.php';
+        require __DIR__ . '/views/pdf-quatation.php';
         require __DIR__ . '/views/footer.php';
     } else if (!empty($urls[1]) && ($urls[1] == 'quatation')) {
         require __DIR__ . '/views/header.php';

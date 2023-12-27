@@ -119,7 +119,6 @@
 <div class="container contact-box" id="cont">
 
   <div class="row">
-
     <!-- AP DIAGNOSTIC CO., LTD. -->
     <div class="col-6">
       <div class="card text-center">
