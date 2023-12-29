@@ -8,6 +8,10 @@
     font-family: "sarabun";
     /*font-size: 12pt;*/
   }
+  table{
+    font-family: "sarabun";
+    font-size: 18px;
+  }
 
   table th {
     font-family: "sarabun";
@@ -21,7 +25,6 @@
   }
 
   html {
-    font-family: sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -43,8 +46,7 @@
   body {
     margin: 0;
     font-family: "sarabun";
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 18px;
     line-height: 1.5;
     color: #212529;
     background-color: #fff;
@@ -613,7 +615,7 @@
           <td>ปปxxxxxx</td>
         </tr>
       </table>
-      <hr />
+      <hr class="border-top:1px solid #eee;color:#eee;" />
     </div>
     <!-- date and number -->
   </div>
@@ -624,7 +626,7 @@
     <div class="row">
       <table class="table">
         <thead>
-          <tr>
+          <tr style="border-top:1px solid #eee;border-bottom:1px solid #eee;">
             <th scope="col">#</th>
             <th scope="col">รายละเอียด</th>
             <th scope="col" class="text-center">จำนวน</th>
@@ -661,7 +663,7 @@
 
 
 
-  <div style='float:right;width: 25%'>
+  <div style='float:right;width: 50%'>
     <table class="table text-right">
       <tr>
         <td class="text-right">รวมเป็นเงิน</td>
