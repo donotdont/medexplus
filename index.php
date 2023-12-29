@@ -22,8 +22,28 @@ if (!empty($request)) {
         require __DIR__ . '/views/quatation.php';
         require __DIR__ . '/views/footer.php';
     } else if (!empty($urls[1]) && ($urls[1] == 'mpdf')) {
-        $mpdf = new \Mpdf\Mpdf();
-        $mpdf->WriteHTML('<h1>Hello World ACare!!!</h1>');
+        //custom font
+        $defaultConfig = (new Mpdf\Config\ConfigVariables())->getDefaults();
+        $fontDirs = $defaultConfig['fontDir'];
+
+        $defaultFontConfig = (new Mpdf\Config\FontVariables())->getDefaults();
+        $fontData = $defaultFontConfig['fontdata'];
+
+        $mpdf = new \Mpdf\Mpdf([
+            'fontDir' => array_merge($fontDirs, [
+                __DIR__ . '/fonts',
+            ]),
+            'fontdata' => $fontData + [
+                'sarabun' => [
+                    'R' => 'THSarabunNew.ttf',
+                    'I' => 'THSarabunNew Italic.ttf',
+                    'B' =>  'THSarabunNew Bold.ttf',
+                ]
+            ],
+        ]);
+        $stylesheet = file_get_contents(__DIR__ . '/assets/css/bootstrap.min.css');
+        $mpdf->WriteHTML($stylesheet, 1); // CSS Script goes here.
+        $mpdf->WriteHTML(file_get_contents(__DIR__ . '/views/pdf-quatation.php'));
         $mpdf->Output();
     } else {
         require __DIR__ . '/views/header.php';
