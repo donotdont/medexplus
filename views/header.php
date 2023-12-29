@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>medix</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/doode.css?v=<?= $version ?>">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.css">
 </head>
@@ -14,17 +15,17 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg  sticky-top covermagin shadow-lg p-3 mb-5 bg-body rounded">
+  <!--<nav class="navbar navbar-expand-lg  sticky-top covermagin shadow-lg p-3 mb-5 bg-body rounded">
     <div class="bd-navbar-toggle"></div>
 
     <div class="container">
       <div class="row"><a class="navbar-brand" href="/"><img src="/assets/images/logo AP+MED.png"></a></div>
 
-      <!-- moblie deplay -->
+      <!-- moblie deplay ->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <!-- moblie deplay -->
+      <!-- moblie deplay ->
 
 
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -52,4 +53,32 @@
 
       </div>
     </div>
+  </nav>-->
+
+  <nav class="py-2 bg-light border-bottom">
+    <div class="container d-flex flex-wrap">
+      <ul class="nav me-auto">
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><i class="fa-solid fa-phone"></i> 083 154 7593</a></li>
+        <li class="nav-item"><span  class="nav-link px-2">|</span></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><i class="fa-solid fa-envelope"></i> apdiagnostic11022022@gmail.com</a></li>
+      </ul>
+      <ul class="nav">
+        <li class="nav-item"><a href="https://www.facebook.com/p/AP-Diagnostic-100084510518991" class="nav-link link-dark px-2"><i class="fa-brands fa-facebook"></i></a></li>
+      </ul>
+    </div>
   </nav>
+
+  <header class="py-3 mb-4 border-bottom sticky-top covermagin shadow-lg p-3 mb-5 bg-body">
+    <div class="container d-flex flex-wrap justify-content-center">
+      <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+        <img class="img-fluid" src="/assets/images/logo AP+MED.png" style="max-width: 180px;"></a>
+      </a>
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a class="nav-item nav-link" href="#About">About us</a></li>
+        <li class="nav-item"><a class="nav-item nav-link" href="#pp">Product</a></li>
+        <li class="nav-item"><a class="nav-item nav-link" href="#cont">Contact us</a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-user"></i></a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-cart-shopping"></i></a></li>
+      </ul>
+    </div>
+  </header>
