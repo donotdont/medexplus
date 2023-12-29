@@ -74,8 +74,7 @@
                     </div>
 
                 </div>
-
-
+            </blockquote>
         </div>
 
 
@@ -83,17 +82,8 @@
         <div class="card-footer col-12  text-muted">
 
             <div class="sum1 " style="float:left;"><b>SUBTOTAL</b></div>
-            <div class="sum2" style="float:right;"><b>0.00</b>
-                <p>bath</p>
-            </div>
+            <div class="sum2" style="float:right;"><b>0.00</b><p>bath</p></div>
 
         </div>
-
-
-
-
-        </blockquote>
-
     </div>
-</div>
 </div>

@@ -2,7 +2,6 @@
     <div class="container">
 
       <div class="row onefooter">
-
         <div class="col-5">
           <img src="/assets/images/APlogo.png" alt="">
           <img src="/assets/images/Medlogo.png"><br><br>
@@ -10,8 +9,7 @@
 
         </div>
         <div class="col-3">
-          <a href="/quatation" target="_blank" class="btn btn-success btn-lg" role="button" >
-            <i class="bi bi-card-heading"></i>ใบเสนอราคา</a>
+          <a href="/quatation" target="_blank" class="btn btn-success btn-lg"><i class="bi bi-card-heading"></i>ใบเสนอราคา</a>
         </div>
 
         <div class="col-4">
@@ -20,8 +18,6 @@
           เชียงใหม่<br><br>
           <i class="bi bi-telephone"></i>Phone 095682562<br><br>
           <i class="bi bi-envelope"></i>ivddiagnostic@gmail.com
-
-
         </div>
 
 

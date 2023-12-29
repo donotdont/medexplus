@@ -60,10 +60,14 @@
       <ul class="nav me-auto">
         <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><i class="fa-solid fa-phone"></i> 083 154 7593</a></li>
         <li class="nav-item"><span class="nav-link px-2">|</span></li>
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><i class="fa-solid fa-envelope"></i> apdiagnostic11022022@gmail.com</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><i class="fa-solid fa-envelope">
+            </i> apdiagnostic11022022@gmail.com</a></li>
+        <li class="nav-item"><span class="nav-link px-2">|</span></li>
+        <li class="nav-item"><a href="https://www.facebook.com/p/AP-Diagnostic-100084510518991" class="nav-link link-dark px-2"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
       </ul>
       <ul class="nav">
-        <li class="nav-item"><a href="https://www.facebook.com/p/AP-Diagnostic-100084510518991" class="nav-link link-dark px-2"><i class="fa-brands fa-facebook"></i></a></li>
+        <li class="nav-item"></li>
+
       </ul>
     </div>
   </nav>
@@ -75,17 +79,20 @@
       </button>
 
       <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
-        <img class="img-fluid" src="/assets/images/logo AP+MED.png" style="max-width: 180px;"></a>
+        <img class="img-fluid" src="/assets/images/logo AP+MED.png" style="max-width: 180px;">
       </a>
 
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-item nav-link" href="#About">About us</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="#pp">Product</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="#cont">Contact us</a></li>
+          <li class="nav-item"><a class="nav-item nav-link" href="/aboutus" target="_blank">About us</a></li>
+          <li class="nav-item"><a class="nav-item nav-link" href="/contact" target="_blank" >Contact us</a></li>
+          <!-- <li class="nav-item"><a href="/quatation" target="_blank" class="nav-link"><button type="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-plus-square"></i> create quatation</a></li> -->
           <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-user"></i></a></li>
           <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        
         </ul>
       </div>
     </div>
   </nav>
+
+
