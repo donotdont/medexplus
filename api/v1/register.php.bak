@@ -1,0 +1,89 @@
+<?php
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: access");
+header("Access-Control-Allow-Methods: POST");
+header("Content-Type: application/json; charset=UTF-8");
+header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') :
+    http_response_code(405);
+    echo json_encode([
+        'success' => 0,
+        'message' => 'Invalid Request Method. HTTP method should be POST',
+    ]);
+    exit;
+endif;
+
+require __DIR__ . '/vendor/autoload.php';
+
+use App\Config\DB as DB;
+use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
+
+$db = new DB();
+$conn = $db->Connection();
+
+$data = json_decode(file_get_contents("php://input"));
+
+if (!isset($data->username) || !isset($data->email) || !isset($data->phone)) {
+    echo json_encode(['success' => 0, 'message' => 'Please provide username, email and phone.']);
+    exit;
+}
+
+if (isset($data->email) && !filter_var($data->email, FILTER_VALIDATE_EMAIL)) {
+	echo json_encode(['success' => 0, 'message' => 'Please check the email format.']);
+    exit;
+}
+
+try {
+
+    $fetch_post = "SELECT * FROM `user` WHERE username=:username OR email=:email OR phone=:phone";
+    $fetch_stmt = $conn->prepare($fetch_post);
+    $fetch_stmt->bindValue(':username', $data->username, PDO::PARAM_STR);
+    $fetch_stmt->bindValue(':email', $data->email, PDO::PARAM_STR);
+    $fetch_stmt->bindValue(':phone', $data->phone, PDO::PARAM_STR);
+    $fetch_stmt->execute();
+
+    if ($fetch_stmt->rowCount() == 0) :
+
+        $row = $fetch_stmt->fetch(PDO::FETCH_ASSOC);
+        $username = isset($data->username) ? $data->username : $row['username'];
+        $email = isset($data->email) ? $data->email : $row['email'];
+        $phone = isset($data->phone) ? $data->phone : $row['phone'];
+
+        $query = "INSERT INTO `user` (username, email, phone) VALUES(:username, :email, :phone)";
+
+        $update_stmt = $conn->prepare($query);
+
+        $update_stmt->bindValue(':username', $username, PDO::PARAM_STR);
+        $update_stmt->bindValue(':email', $email, PDO::PARAM_STR);
+        $update_stmt->bindValue(':phone', $phone, PDO::PARAM_STR);
+
+
+        if ($update_stmt->execute()) {
+
+            echo json_encode([
+                'success' => 1,
+                'message' => 'User created successfully'
+            ]);
+            exit;
+        }
+
+        echo json_encode([
+            'success' => 0,
+            'message' => 'User Not created. Something is going wrong.'
+        ]);
+        exit;
+
+    else :
+        echo json_encode(['success' => 0, 'message' => 'User, Email or Phone have already.']);
+        exit;
+    endif;
+} catch (PDOException $e) {
+    http_response_code(500);
+    echo json_encode([
+        'success' => 0,
+        'message' => $e->getMessage()
+    ]);
+    exit;
+}

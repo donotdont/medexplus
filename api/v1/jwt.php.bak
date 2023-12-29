@@ -1,0 +1,65 @@
+<?php
+
+require __DIR__ . '/vendor/autoload.php';
+
+use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
+
+$privateKey = <<<EOD
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEArQhxSJAWWmf7bJ1YXgOdDCKOIbtRoJTYFzlNGmVmYchls89S
+N+VPF3MReShpX8rCh+yv94g+YAsDFmx2Xg1wzwZXmxjjOLQohaQocovczqQ0Fhpi
+nEZu8a0iaFcFGno1b17/adM36gxD0ahgkVnuTNI06TDl8pH9Fzt4mCa39j6uBJSs
+Zd5AqkaiEn8xHI5dRwwYBKa7nHawIil2Pnt41yFAVdBeB6KnxNNtxWhfxa/zde0+
+c7f0T2uOoQ9HzKGulok2b+OF+796GoR7zQpj0nW4bUseGXetxXgC2fV4bM0OQ+yi
+XDk2DStfkYZDyPYenHj6023jYElplKfndWd8mQIDAQABAoIBAA2OvsmPuKCmyxVs
+krLzF4gO4RIVikTJxNC1BayOy2HYANgA45FLn1HYC0Nx/ieqTGm4CuWbQD/oPPqx
+zuh5pyAhgBW/8nXL7+zguuaWvNtYFFizAoz6G9FF3o9MWjMD5lHuoJabHSNyiJHR
+3pck874DLnAjC7Fg7PK4Dy/kwL9DcwV+sySpwBxlyFu/dn+cntGYz5EpTbnI6fbV
+XrAVelDzyvOFt2zV2NVpgL0jik0Z+Vav4H/+05XbntMPpCoZNqt3NnO2GrljKJcF
+H1+JligSzocWn6Rsx/rVUdLwIRK7TdMXZessfVv11qaX3MuToJoL9JwvHpjhqk3z
+gMbQ0AECgYEA1B5Xkr0GqxP9HzovxcfrWQFdnKKsiQ8JyUYiSWSPoscxXzMB9ncx
+iDlPgzw1ZXL/FN/ytLKEFUJ213uAcpFslnsL9srgNbZvqN4N4SZkyFaJEnzsjCD2
+NSCgCaPlKyhkMf+fKBSCiOEYNp9JfvODzmzb77W8QpFB8pet7Cv5ypkCgYEA0NQn
+1KTCaFy2DikIXXetnTaYI6Qj1MXUAyOmyBLlYpQ+dD0+0+tP4xvs5qpJyfuIUPe7
+Q53XA6i9PmqVGnEH42C+A1M5iG5/OsSg9dnMjvzZOZyOsVORWsAy0w9hHVCOH5mK
+sqLtCmBpYHZGXw9bEohs5tC7nB9UreWBP7hsggECgYBZxIl9IR/sUKZDi+Vhxyxz
+W1+ZhUKNMl8K3fJuqu8ajT/4sOZ4vpKoutBKkrVqPJN06x2UmSPKt3kB0lNWqPKS
+cHpstAjU0mNIzMiE6zGlkvGpcFLPLrfjXe48hi7a59oXSr25QYzIjrInk5uP7VBv
+kKQ3Our0JPMKzmQdWbL5qQKBgQDQyl3skLLDT3bC36m6ce8G0c/5SqJ8mTLp1Jpr
+TeFE17090QJhNdOQ2ZnZ4oaWSUQ42AfGiiixQuO7ZSsg3cQqRc6VWn+adggFRRU9
+2f5ZNFsn6+0LROd+mc33Elhhy+ndlFGFW7qudkjFplujraG7/OUNPcNmTDkJCP9a
+K1VqAQKBgC6D4m6NuPvh0yYhnlAZuv5rh/OukyTlxkmfVJfaSM2NxCaz3ph+PFmV
+aAedSqz6W473FaV6YvlKfqD+KyOPfSaXAnxh7iiCvOLgiHWtBKDifu/LtwvPb3cJ
+teNNoaoYiyF6a41E6VkOcMJ01dASwlK+0flPUPl6c1SWO7BGU6H/
+-----END RSA PRIVATE KEY-----
+EOD;
+
+$publicKey = <<<EOD
+-----BEGIN PUBLIC KEY-----
+AAAAB3NzaC1yc2EAAAADAQABAAAAgQDbaVbGnNZb8t3T5TRdV6Ij14d/qh4y6bbA
+q8N743bWcXtl8jW7mXdrh/KyexyDO1aD4qVyyVee1/7xvcVjYh7e8bwPxqmHbH+k
+E8LPdr/G6aBPN0ZzBmhsPPFq+fSlme8zLdWPtX9CHbI1dOiVBTHzIZOkVLI+/AnI
+asw7ROmCrw==
+-----END PUBLIC KEY-----
+EOD;
+
+$payload = array(
+    "iss" => "example.org",
+    "aud" => "example.com",
+    "iat" => 1356999524,
+    "nbf" => 1357000000
+);
+
+$jwt = JWT::encode($payload, $privateKey, 'RS256');
+echo "Encode:\n" . print_r($jwt, true) . "\n";
+
+$decoded = JWT::decode($jwt, new Key($publicKey, 'RS256'));
+
+/*
+ NOTE: This will now be an object instead of an associative array. To get
+ an associative array, you will need to cast it as such:
+*/
+
+$decoded_array = (array) $decoded;
+echo "Decode:\n" . print_r($decoded_array, true) . "\n";
