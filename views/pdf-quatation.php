@@ -47,7 +47,6 @@
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
-    text-align: left;
     background-color: #fff;
   }
 
@@ -562,7 +561,7 @@
   }
 
   .text-center {
-    text-align: center !important;
+    text-align: center !important;  
   }
 
   .text-right {
@@ -628,9 +627,9 @@
           <tr>
             <th scope="col">#</th>
             <th scope="col">รายละเอียด</th>
-            <th scope="col text-center">จำนวน</th>
-            <th scope="col text-right">ราคาต่อหนวย</th>
-            <th scope="col">ยอดรวม</th>
+            <th scope="col" class="text-center">จำนวน</th>
+            <th scope="col" class="text-right">ราคาต่อหนวย</th>
+            <th scope="col" class="text-right">ยอดรวม</th>
           </tr>
         </thead>
         <tbody>
