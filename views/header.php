@@ -70,7 +70,7 @@
 
   <nav class="py-3 mb-4 border-bottom sticky-top covermagin shadow-lg p-3 mb-5 bg-body navbar navbar-expand-lg navbar-light bg-light">
     <div class="container flex-wrap justify-content-center">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler m-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="position: absolute;left: 5px;top: 16px;">
         <span class="navbar-toggler-icon"></span>
       </button>
 
