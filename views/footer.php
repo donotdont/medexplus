@@ -14,10 +14,10 @@
 
         <div class="col-4">
           <h6>Contact Us</h6><br>
-          <i class="bi bi-geo-alt"></i>เอพี่ ไดแอกชั่นอสติกส์ 199/44 หมู่ที่1 ต สันทรายหลวง อ สันทราย จ
+          <i class="bi bi-geo-alt"></i> เอพี่ ไดแอกชั่นอสติกส์ 199/44 หมู่ที่1 ต สันทรายหลวง อ สันทราย จ
           เชียงใหม่<br><br>
-          <i class="bi bi-telephone"></i>Phone 095682562<br><br>
-          <i class="bi bi-envelope"></i>ivddiagnostic@gmail.com
+          <i class="bi bi-telephone"></i> Phone 095682562<br><br>
+          <i class="bi bi-envelope"></i> ivddiagnostic@gmail.com
         </div>
 
 
