@@ -33,6 +33,7 @@
 
         <div class="col-4"></div>
         <div class="col-2">
+          <img src="/assets/images/promptpay.png">
           <img src="/assets/images/visa.png">
           <img src="/assets/images/master.png">
           <img src="/assets/images/playpal.png">
