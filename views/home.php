@@ -32,7 +32,7 @@
 
 <div class="container">
   <!-- ////////////////////////  Recommended    //////////-->
-  <div class="row" style="margin-top: 200px;">
+  <div class="row" style="margin-top: 50px;">
 
     <div class="col-md-12">
       <h2><i>Recommended</i></h2>
@@ -96,7 +96,7 @@
 <!-- //////////////////////Nav bar box/////////// -->
 
 <div class="container">
-  <div class="row" style="margin-top: 200px;">
+  <div style="margin-top: 50px;">
     <div class="navbar-brand">
       <h3><i>Product</i></h3>
     </div>
