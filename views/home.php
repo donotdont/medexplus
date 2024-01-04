@@ -2,7 +2,7 @@
 
   <!-- Top Deplay -->
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-8 mb-2">
       <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -15,14 +15,14 @@
       </div>
     </div>
     <div class="col-md-4">
-      <div class="row" style="background-color:; height: 200px; margin-top: 15px;">
-        <img src="/assets/images/rect3.png" style="width: 430px; height: 200px;">
+      <div class="row">
+        <img src="/assets/images/rect3.png" class="img-fluid" style="min-height: 200px;">
         <div class="col-4"></div>
         <div class="col-4"> <a href="#" class="btn btn-success btn-sm" style="margin-top:-150px;">Buy Now</a></div>
         <div class="col-4"></div>
       </div>
-      <div class="row" style="background-color:; height:200px; margin-top: 50px;">
-        <img src="/assets/images/p2024.jpg" style="width: 430px; height: 200px;">
+      <div class="row">
+        <img src="/assets/images/p2024.jpg" class="img-fluid" style="min-height: 200px;">
       </div>
     </div>
   </div>
@@ -41,7 +41,7 @@
     <div class="row">
       <div class="col-md-3">
         <div class="card mb-2">
-          <img class="card-img-top img-thumbnail" src="/assets/images/rect2.png" alt="Card image cap">
+          <img class="img-fluid img-fluid" src="/assets/images/rect2.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Coagulation Analyzer PT-M1-11</h5>
             <p class="card-text"></p>
@@ -52,7 +52,7 @@
 
       <div class="col-md-3">
         <div class="card mb-2">
-          <img class="card-img-top img-thumbnail" src="/assets/images/tube-red.png" alt="Card image cap">
+          <img class="img-fluid img-fluid" src="/assets/images/tube-red.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Innomed Tube </h5>
             <p class="card-text"></p>
@@ -63,7 +63,7 @@
 
       <div class="col-md-3">
         <div class="card mb-2">
-          <img class="card-img-top img-thumbnail" src="/assets/images/tube-red.png" alt="Card image cap">
+          <img class="img-fluid img-fluid" src="/assets/images/tube-red.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Innomed Tube </h5>
             <p class="card-text"></p>
@@ -74,7 +74,7 @@
 
       <div class="col-md-3">
         <div class="card mb-2">
-          <img class="card-img-top img-thumbnail" src="/assets/images/tube-red.png" alt="Card image cap">
+          <img class="img-fluid img-fluid" src="/assets/images/tube-red.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Innomed Tube </h5>
             <p class="card-text"></p>
@@ -106,7 +106,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
         <ul class="navbar-nav mr-auto">
-          <div class="dropdown" style="">
+          <div class="dropdown">
             <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
               <h6>Hematology</h6>
             </button>
@@ -139,19 +139,19 @@
 <div class="container">
   <div class="row">
     <div class="col-md-3">
-      <div class="card" id="DF50" style="width: 18rem;">
-        <img class="card-img-top" src="/assets/images/xq-DF50CRP.png" alt="Card image cap">
+      <div class="card mb-2" id="DF50">
+        <img class="img-fluid" src="/assets/images/xq-DF50CRP.png" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="#">DF50</a></h5>
-          <p class="card-text"> 5-Part+CRP Tests Combined within One Machine </p>
+          <p class="card-text"> 5-Part+</p>
           <a href="#" class="btn btn-success">Buy Now</a>
         </div>
       </div>
     </div>
 
     <div class="col-md-3">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="/assets/images/xq-UN73_.png" alt="Card image cap">
+      <div class="card mb-2">
+        <img class="img-fluid" src="/assets/images/xq-UN73_.png" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="#">UN73</a></h5>
           <p class="card-text">3-Part & 5-Part Combined Auto Hematology Analyzer</p>
@@ -161,8 +161,8 @@
     </div>
 
     <div class="col-md-3">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="/assets/images/xq-DP-H10-2(1).png" alt="Card image cap">
+      <div class="card mb-2">
+        <img class="img-fluid" src="/assets/images/xq-DP-H10-2(1).png" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="#">DP-H10</a></h5>
           <p class="card-text">Automatic Hematology Analyzer, POCT</p>
@@ -172,8 +172,8 @@
     </div>
 
     <div class="col-md-3">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="/assets/images/xq-Dp-c16.png" alt="Card image cap">
+      <div class="card mb-2">
+        <img class="img-fluid" src="/assets/images/xq-Dp-c16.png" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="#">DP-C16</a></h5>
           <p class="card-text">Semi-Auto Biochemistry & Coagulation Analyzer</p>
@@ -189,19 +189,19 @@
 
   <div class="row" style="margin-top: 50px;">
     <div class="col-md-3">
-      <div class="card" id="DF50" style="width: 18rem;">
-        <img class="card-img-top" src="/assets/images/xq-DF50CRP.png" alt="Card image cap">
+      <div class="card mb-2" id="DF50">
+        <img class="img-fluid" src="/assets/images/xq-DF50CRP.png" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="#">DF50</a></h5>
-          <p class="card-text"> 5-Part+CRP Tests Combined within One Machine </p>
+          <p class="card-text"> 5-Part+</p>
           <a href="#" class="btn btn-success">Buy Now</a>
         </div>
       </div>
     </div>
 
     <div class="col-md-3">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="/assets/images/xq-UN73_.png" alt="Card image cap">
+      <div class="card mb-2">
+        <img class="img-fluid" src="/assets/images/xq-UN73_.png" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="#">UN73</a></h5>
           <p class="card-text">3-Part & 5-Part Combined Auto Hematology Analyzer</p>
@@ -211,8 +211,8 @@
     </div>
 
     <div class="col-md-3">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="/assets/images/xq-DP-H10-2(1).png" alt="Card image cap">
+      <div class="card mb-2">
+        <img class="img-fluid" src="/assets/images/xq-DP-H10-2(1).png" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="#">DP-H10</a></h5>
           <p class="card-text">Automatic Hematology Analyzer, POCT</p>
@@ -222,8 +222,8 @@
     </div>
 
     <div class="col-md-3">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="/assets/images/xq-Dp-c16.png" alt="Card image cap">
+      <div class="card mb-2">
+        <img class="img-fluid" src="/assets/images/xq-Dp-c16.png" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="#">DP-C16</a></h5>
           <p class="card-text">Semi-Auto Biochemistry & Coagulation Analyzer</p>

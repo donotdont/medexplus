@@ -16,8 +16,7 @@
       <ul class="nav me-auto">
         <li class="nav-item"><a href="tel:0831547593" class="nav-link link-dark px-2"><i class="fa-solid fa-phone"></i> 083 154 7593</a></li>
         <li class="nav-item"><span class="nav-link px-2">|</span></li>
-        <li class="nav-item"><a href="mailto:apdiagnostic11022022@gmail.com" class="nav-link link-dark px-2"><i class="fa-solid fa-envelope">
-            </i> apdiagnostic11022022@gmail.com</a></li>
+        <li class="nav-item"><a href="mailto:apdiagnostic11022022@gmail.com" class="nav-link link-dark px-2"><i class="fa-solid fa-envelope"></i> ivddiagnostic@gmail.com</a></li>
         <li class="nav-item"><span class="nav-link px-2">|</span></li>
         <li class="nav-item"><a href="https://www.facebook.com/p/AP-Diagnostic-100084510518991" class="nav-link link-dark px-2" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
       </ul>

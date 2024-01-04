@@ -1,4 +1,8 @@
-h1.hhh {}
+@media (max-width: 768px) {
+    .text-sm-center {
+            text-align: center !important;
+     } 
+  }
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
@@ -31,7 +35,7 @@ h1.hhh {}
 }
 
 .onefooter {
-    height: 380px;
+    min-height: 380px;
     background-color: #f2f2f2;
     margin-top: 50px;
     padding-top: 80px;
