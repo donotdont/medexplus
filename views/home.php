@@ -142,7 +142,7 @@
       <div class="card mb-2" id="DF50">
         <img class="img-fluid" src="/assets/images/xq-DF50CRP.png" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="#">DF50</a></h5>
+          <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="/product/1">DF50</a></h5>
           <p class="card-text"> 5-Part+</p>
           <a href="#" class="btn btn-success">Buy Now</a>
         </div>
@@ -153,7 +153,7 @@
       <div class="card mb-2">
         <img class="img-fluid" src="/assets/images/xq-UN73_.png" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="#">UN73</a></h5>
+          <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="/product/1">UN73</a></h5>
           <p class="card-text">3-Part & 5-Part Combined Auto Hematology Analyzer</p>
           <a href="#" class="btn btn-success">Buy Now</a>
         </div>
@@ -164,7 +164,7 @@
       <div class="card mb-2">
         <img class="img-fluid" src="/assets/images/xq-DP-H10-2(1).png" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="#">DP-H10</a></h5>
+          <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="/product/1">DP-H10</a></h5>
           <p class="card-text">Automatic Hematology Analyzer, POCT</p>
           <a href="#" class="btn btn-success">Buy Now</a>
         </div>
@@ -175,7 +175,7 @@
       <div class="card mb-2">
         <img class="img-fluid" src="/assets/images/xq-Dp-c16.png" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="#">DP-C16</a></h5>
+          <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="/product/1">DP-C16</a></h5>
           <p class="card-text">Semi-Auto Biochemistry & Coagulation Analyzer</p>
           <a href="#" class="btn btn-success">Buy Now</a>
         </div>
@@ -192,7 +192,7 @@
       <div class="card mb-2" id="DF50">
         <img class="img-fluid" src="/assets/images/xq-DF50CRP.png" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="#">DF50</a></h5>
+          <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="/product/1">DF50</a></h5>
           <p class="card-text"> 5-Part+</p>
           <a href="#" class="btn btn-success">Buy Now</a>
         </div>
@@ -203,7 +203,7 @@
       <div class="card mb-2">
         <img class="img-fluid" src="/assets/images/xq-UN73_.png" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="#">UN73</a></h5>
+          <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="/product/1">UN73</a></h5>
           <p class="card-text">3-Part & 5-Part Combined Auto Hematology Analyzer</p>
           <a href="#" class="btn btn-success">Buy Now</a>
         </div>
@@ -214,7 +214,7 @@
       <div class="card mb-2">
         <img class="img-fluid" src="/assets/images/xq-DP-H10-2(1).png" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="#">DP-H10</a></h5>
+          <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="/product/1">DP-H10</a></h5>
           <p class="card-text">Automatic Hematology Analyzer, POCT</p>
           <a href="#" class="btn btn-success">Buy Now</a>
         </div>
@@ -225,7 +225,7 @@
       <div class="card mb-2">
         <img class="img-fluid" src="/assets/images/xq-Dp-c16.png" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="#">DP-C16</a></h5>
+          <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="/product/1">DP-C16</a></h5>
           <p class="card-text">Semi-Auto Biochemistry & Coagulation Analyzer</p>
           <a href="#" class="btn btn-success">Buy Now</a>
         </div>
