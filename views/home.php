@@ -27,9 +27,11 @@
     </div>
   </div>
 
+</div>
 
 
 
+<div class="container">
   <!-- ////////////////////////  Recommended    //////////-->
   <div class="row" style="margin-top: 200px;">
 
@@ -39,8 +41,8 @@
 
     <div class="row">
       <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/assets/images/rect2.png" alt="Card image cap">
+        <div class="card mb-2" >
+          <img class="card-img-top img-thumbnail" src="/assets/images/rect2.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Coagulation Analyzer PT-M1-11</h5>
             <p class="card-text"></p>
@@ -50,40 +52,39 @@
       </div>
 
       <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/assets/images/p2024.jpg" alt="Card image cap">
+        <div class="card mb-2">
+          <img class="card-img-top img-thumbnail"  src="/assets/images/tube-red.png" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title">Innomed Tube </h5>
+            <p class="card-text"></p>
             <a href="#" class="btn btn-success">Buy Now</a>
           </div>
         </div>
       </div>
 
       <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/assets/images/p2024.jpg" alt="Card image cap">
+        <div class="card mb-2">
+          <img class="card-img-top img-thumbnail"  src="/assets/images/tube-red.png" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title">Innomed Tube </h5>
+            <p class="card-text"></p>
             <a href="#" class="btn btn-success">Buy Now</a>
           </div>
         </div>
       </div>
 
       <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/assets/images/p2024.jpg" alt="Card image cap">
+        <div class="card mb-2">
+          <img class="card-img-top img-thumbnail"  src="/assets/images/tube-red.png" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title">Innomed Tube </h5>
+            <p class="card-text"></p>
             <a href="#" class="btn btn-success">Buy Now</a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
+     
   <!-- ////////////////////////  Recommended    //////////-->
 
 
@@ -92,6 +93,8 @@
   <!-- /////////////////////////product Box ////////////-->
 
   <!-- //////////////////////Nav bar box/////////// -->
+
+  <div class="container">
   <div class="row" style="margin-top: 200px;">
     <div class="navbar-brand">
       <h3><i>Product</i></h3>
@@ -107,7 +110,7 @@
               <h6>Hematology</h6>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">DF50</a></li>
+              <li><a class="dropdown-item" href="DF50">DF50</a></li>
               <li><a class="dropdown-item" href="#">UN73</a></li>
             </ul>
           </div>
@@ -126,17 +129,19 @@
         </ul>
       </div>
     </nav>
+  </div>
   <!-- //////////////////////Nav bar box/////////// -->
 
 
    <!-- ////////////////////  Nav card product  box  /////////////////////// -->
+   <div class="container">
     <div class="row">
       <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/assets/images/pt-mi-11.jpg" alt="Card image cap">
+        <div class="card" id="DF50" style="width: 18rem;">
+          <img class="card-img-top" src="/assets/images/xq-DF50CRP.png" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Coagulation Analyzer PT-M1-11</h5>
-            <p class="card-text"></p>
+            <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="#">DF50</a></h5>
+            <p class="card-text"> 5-Part+CRP Tests Combined within One Machine  </p>
             <a href="#" class="btn btn-success">Buy Now</a>
           </div>
         </div>
@@ -144,10 +149,10 @@
 
       <div class="col-md-3">
         <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/assets/images/p2024.jpg" alt="Card image cap">
+          <img class="card-img-top" src="/assets/images/xq-UN73_.png" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="#">UN73</a></h5>
+            <p class="card-text">3-Part & 5-Part Combined Auto Hematology Analyzer</p>
             <a href="#" class="btn btn-success">Buy Now</a>
           </div>
         </div>
@@ -155,10 +160,10 @@
 
       <div class="col-md-3">
         <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/assets/images/p2024.jpg" alt="Card image cap">
+          <img class="card-img-top" src="/assets/images/xq-DP-H10-2(1).png" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="#">DP-H10</a></h5>
+            <p class="card-text">Automatic Hematology Analyzer, POCT</p>
             <a href="#" class="btn btn-success">Buy Now</a>
           </div>
         </div>
@@ -166,15 +171,65 @@
 
       <div class="col-md-3">
         <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/assets/images/p2024.jpg" alt="Card image cap">
+          <img class="card-img-top" src="/assets/images/xq-Dp-c16.png" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="#">DP-C16</a></h5>
+            <p class="card-text">Semi-Auto Biochemistry & Coagulation Analyzer</p>
             <a href="#" class="btn btn-success">Buy Now</a>
           </div>
         </div>
       </div>
     </div>
+   </div>
+
+
+   <div class="container">
+
+    <div class="row" style="margin-top: 50px;">
+      <div class="col-md-3">
+        <div class="card" id="DF50" style="width: 18rem;">
+          <img class="card-img-top" src="/assets/images/xq-DF50CRP.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="#">DF50</a></h5>
+            <p class="card-text"> 5-Part+CRP Tests Combined within One Machine  </p>
+            <a href="#" class="btn btn-success">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="/assets/images/xq-UN73_.png" alt="Card image cap">
+          <div class="card-body">
+          <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="#">UN73</a></h5>
+            <p class="card-text">3-Part & 5-Part Combined Auto Hematology Analyzer</p>
+            <a href="#" class="btn btn-success">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="/assets/images/xq-DP-H10-2(1).png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="#">DP-H10</a></h5>
+            <p class="card-text">Automatic Hematology Analyzer, POCT</p>
+            <a href="#" class="btn btn-success">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="/assets/images/xq-Dp-c16.png" alt="Card image cap">
+          <div class="card-body">
+          <h5 class="card-title"><a class="link-success  link-opacity-75-hover" href="#">DP-C16</a></h5>
+            <p class="card-text">Semi-Auto Biochemistry & Coagulation Analyzer</p>
+            <a href="#" class="btn btn-success">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
     <!-- ////////////////////  Nav card product  box  /////////////////////// -->
-</div>
-</div>
+

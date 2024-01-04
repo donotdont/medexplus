@@ -75,9 +75,8 @@ h1.hhh {}
 }
 
 
-.card-img-top {
-    border-radius: 200px;
-    width: 90%;
+.card img {
+border: none;
 }
 
 .nav-pills .nav-link.active {
@@ -237,3 +236,6 @@ h1.hhh {}
     float: right;
 }
 
+.card{
+    min-height: 500px; 
+}
