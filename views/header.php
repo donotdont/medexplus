@@ -14,12 +14,12 @@
   <nav class="py-2 bg-light border-bottom">
     <div class="container d-flex flex-wrap">
       <ul class="nav me-auto">
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><i class="fa-solid fa-phone"></i> 083 154 7593</a></li>
+        <li class="nav-item"><a href="tel:0831547593" class="nav-link link-dark px-2"><i class="fa-solid fa-phone"></i> 083 154 7593</a></li>
         <li class="nav-item"><span class="nav-link px-2">|</span></li>
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><i class="fa-solid fa-envelope">
+        <li class="nav-item"><a href="mailto:apdiagnostic11022022@gmail.com" class="nav-link link-dark px-2"><i class="fa-solid fa-envelope">
             </i> apdiagnostic11022022@gmail.com</a></li>
         <li class="nav-item"><span class="nav-link px-2">|</span></li>
-        <li class="nav-item"><a href="https://www.facebook.com/p/AP-Diagnostic-100084510518991" class="nav-link link-dark px-2"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+        <li class="nav-item"><a href="https://www.facebook.com/p/AP-Diagnostic-100084510518991" class="nav-link link-dark px-2" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
       </ul>
       <ul class="nav">
         <li class="nav-item"></li>
@@ -40,9 +40,9 @@
 
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-item nav-link" href="/aboutus" target="_blank">About us</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="/contact" target="_blank" >Contact us</a></li>
-          <li class="nav-item"><a class="nav-item nav-link" href="#" target="_blank" >product</a></li>
+          <li class="nav-item"><a class="nav-item nav-link" href="/aboutus">About us</a></li>
+          <li class="nav-item"><a class="nav-item nav-link" href="/contact">Contact us</a></li>
+          <li class="nav-item"><a class="nav-item nav-link" href="#">product</a></li>
           <!-- <li class="nav-item"><a href="/quatation" target="_blank" class="nav-link"><button type="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-plus-square"></i> create quatation</a></li> -->
           <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-user"></i></a></li>
           <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-cart-shopping"></i></a></li>
