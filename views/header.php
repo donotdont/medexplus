@@ -43,7 +43,7 @@
       </a>
 
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto text-sm-center">
           <li class="nav-item"><a class="nav-item nav-link" href="/">Home</a></li>
           <li class="nav-item"><a class="nav-item nav-link" href="/shop">Shop</a></li>
           <li class="nav-item"><a class="nav-item nav-link" href="/aboutus">About us</a></li>
