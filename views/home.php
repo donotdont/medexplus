@@ -40,7 +40,7 @@
     <div class="row">
       <div class="col-md-3">
         <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/assets/images/pt-mi-11.jpg" alt="Card image cap">
+          <img class="card-img-top" src="/assets/images/rect2.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Coagulation Analyzer PT-M1-11</h5>
             <p class="card-text"></p>
