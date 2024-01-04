@@ -16,7 +16,7 @@
   <nav class="bg-light border-bottom">
     <div class="container d-flex flex-wrap">
       <ul class="nav me-auto head-top-start">
-        <li class="nav-item"><a href="tel:0831547593" class="nav-link link-dark px-2"><i class="fa-solid fa-phone"></i> 083 154 7593</a></li>
+        <li class="nav-item"><a href="tel:66831547593" class="nav-link link-dark px-2"><i class="fa-solid fa-phone"></i> (66+)83 154 7593</a></li>
         <li class="nav-item"><span class="nav-link px-2">|</span></li>
         <li class="nav-item"><a href="mailto:apdiagnostic11022022@gmail.com" class="nav-link link-dark px-2"><i class="fa-solid fa-envelope"></i> ivddiagnostic@gmail.com</a></li>
         <li class="nav-item"><span class="nav-link px-2">|</span></li>
@@ -48,7 +48,7 @@
           <li class="nav-item"><a class="nav-item nav-link" href="/shop">Shop</a></li>
           <li class="nav-item"><a class="nav-item nav-link" href="/aboutus">About us</a></li>
           <li class="nav-item"><a class="nav-item nav-link" href="/contact">Contact us</a></li>
-          <li class="nav-item pt-1"><a href="/quatation" target="_blank" class="btn btn-success btn-sm"><i class="fa-regular fa-file-lines"></i> ใบเสนอราคา</a></li>
+          <li class="nav-item pt-1"><a href="/quatation" target="_blank" class="btn btn-success btn-sm"><i class="bi bi-file-earmark-medical"></i> ใบเสนอราคา</a></li>
           <!-- <li class="nav-item"><a href="/quatation" target="_blank" class="nav-link"><button type="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-plus-square"></i> create quatation</a></li>
           <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-user"></i></a></li> -->
           <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-bag-shopping position-relative" style="font-size: 1.5em;"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary" style="font-size: 0.5em;">99<span class="visually-hidden">unread cart</span></span></i></a></li>
