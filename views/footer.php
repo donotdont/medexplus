@@ -1,7 +1,7 @@
 <footer class="footerBOX">
     <div class="container">
 
-      <div class="row onefooter py-2">
+      <div class="row onefooter">
         <div class="col-sm-5 text-center">
           <img src="/assets/images/APlogo.png" alt="">
           <img src="/assets/images/Medlogo.png"><br><br>
@@ -12,7 +12,7 @@
           <a href="/quatation" target="_blank" class="btn btn-success btn-lg"><i class="bi bi-card-heading"></i>ใบเสนอราคา</a>
         </div>
 
-        <div class="col-sm-4">
+        <div class="col-sm-4 py-2">
           <h6>Contact Us</h6><br>
           <i class="bi bi-geo-alt"></i> เอพี่ ไดแอกชั่นอสติกส์ 199/44 หมู่ที่1 ต.สันทรายหลวง อ.สันทราย จ.เชียงใหม่<br><br>
           <i class="bi bi-telephone"></i> 083 154 7593<br><br>
