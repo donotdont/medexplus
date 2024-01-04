@@ -51,6 +51,8 @@
           <li class="nav-item pt-1"><a href="/quatation" target="_blank" class="btn btn-success btn-sm"><i class="bi bi-file-earmark-medical"></i> ใบเสนอราคา</a></li>
           <!-- <li class="nav-item"><a href="/quatation" target="_blank" class="nav-link"><button type="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-plus-square"></i> create quatation</a></li>
           <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-user"></i></a></li> -->
+          <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-magnifying-glass" style="font-size: 1.5em;"></i></a></li>
+          <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-heart" style="font-size: 1.5em;"></i></a></li>
           <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-bag-shopping position-relative" style="font-size: 1.5em;"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary" style="font-size: 0.5em;">99<span class="visually-hidden">unread cart</span></span></i></a></li>
         </ul>
       </div>
