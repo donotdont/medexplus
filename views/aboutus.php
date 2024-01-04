@@ -12,7 +12,7 @@
             <div class="row g-0">
               <div class="col-md-4">
                 <div class="imgceo">
-                  <img src="/assets/images/ceo-den.jpg" class="card-img-top" alt="...">
+                  <img src="/assets/images/ceo-den.jpg" class="card-img-top rounded-circle" alt="...">
                 </div>
               </div>
               <div class="col-md-8">
@@ -35,7 +35,7 @@
             <div class="row g-0">
               <div class="col-md-4">
                 <div class="imgceo">
-                  <img src="/assets/images/ceo-women.jpg" class="card-img-top" alt="...">
+                  <img src="/assets/images/ceo-women.jpg" class="card-img-top rounded-circle" alt="...">
                 </div>
               </div>
               <div class="col-md-8">

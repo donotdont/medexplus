@@ -231,15 +231,17 @@ border: none;
 }
 
 .sum-det{
-    background-color:;
     float: left;
 }
 
 .sum-number{
-    background-color:;
     float: right;
 }
 
 .card{
     min-height: 500px; 
+}
+
+.rounded-circle{
+    border-radius: 50% !important;
 }
