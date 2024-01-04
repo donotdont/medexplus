@@ -8,7 +8,7 @@ node {
             }
 
             stage('Deploy to Hostneverdie') {
-                bat 'bash -c "plink medexplu@27.254.96.247 -P 98 -l medexplu -pw R5m+3\;8i7lqUZY -batch \'cd cd domains/ap.medexplus.co.th/public_html/medixplus-update;git pull;exit;\'"'
+                bat 'bash -c "plink medexplu@27.254.96.247 -P 98 -l medexplu -pw \'R5m+3;8i7lqUZY\' -batch \'cd cd domains/ap.medexplus.co.th/public_html/medixplus-update;git pull;exit;\'"'
             }
 
             stage('Publish results') {
