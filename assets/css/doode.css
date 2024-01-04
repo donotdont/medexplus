@@ -1,8 +1,22 @@
+/* Start Boostrap */
+.btn.btn-success {
+    background-color: #008656;
+}
+
 @media (max-width: 768px) {
     .text-sm-center {
-            text-align: center !important;
-     } 
-  }
+        text-align: center !important;
+    }
+}
+/* End Boostrap */
+
+.head-top-start {
+    font-size: 12px;
+}
+
+.head-top-end {
+    font-size: 12px;
+}
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
@@ -69,7 +83,7 @@
 
 .nav-link:focus,
 .nav-link:hover {
-    color: #dc3545 !important;
+    color: #3751ee !important;
 }
 
 
@@ -80,7 +94,7 @@
 
 
 .card img {
-border: none;
+    border: none;
 }
 
 .nav-pills .nav-link.active {
@@ -217,31 +231,31 @@ border: none;
 .datnum-b1 {
     color: #ff8f00;
     padding-left: 80px;
-    border-bottom:solid 2px #ddd;
+    border-bottom: solid 2px #ddd;
 }
 
-.Debox-pdf{
+.Debox-pdf {
     /* height: 500px;  */
     /* background-color: #c9ebd9; */
 }
 
-.sum-pdf{
+.sum-pdf {
     padding: 10px;
     margin-top: 100px;
 }
 
-.sum-det{
+.sum-det {
     float: left;
 }
 
-.sum-number{
+.sum-number {
     float: right;
 }
 
-.card{
-    min-height: 500px; 
+.card {
+    min-height: 500px;
 }
 
-.rounded-circle{
+.rounded-circle {
     border-radius: 50% !important;
 }
