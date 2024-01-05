@@ -24,8 +24,8 @@
       </div>
 
       <div class="col-md-12 text-center">
-        <img src="/assets/images/ap_logo_bw.png" alt="AP DIAGNOSTIC Logo" />
-        <img src="/assets/images/med_logo_bw.png" alt="MED EX PLUS Logo" />
+        <img height="100" src="/assets/images/ap_logo_bw.png" alt="AP DIAGNOSTIC Logo" />
+        <img height="100" src="/assets/images/med_logo_bw.png" alt="MED EX PLUS Logo" />
       </div>
 
 

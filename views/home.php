@@ -1,40 +1,71 @@
+<link rel="stylesheet" href="/assets/css/video-js.min.css" />
 <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
 <div class="container">
   <!-- Swiper -->
   <div class="swiper">
-    <div class="parallax-bg" style="background-image:url(./images/nature-1.jpg)" data-swiper-parallax="-23%"></div>
+    <div class="parallax-bg" data-swiper-parallax="-23%"></div>
     <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="title" data-swiper-parallax="-300">Slide 1</div>
-        <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+      <div class="swiper-slide" data-slide-type="vdo">
+        <video id="my-player" class="video-js" preload="auto" autoplay="autoplay" muted="muted" loop="loop" style="
+    position: absolute;
+    height: auto;
+    width: 100%;
+    z-index: -5;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%); /* This is a shorthand of
+                                         translateX(-50%) and translateY(-50%) */
+">
+          <source src="/assets/videos/DP-H10_ppt_20221014102802A001.mp4" type="video/mp4">
+          </source>
+        </video>
+        <div class="title" data-swiper-parallax="-300">DP-H10</div>
+        <div class="subtitle" data-swiper-parallax="-200">Automatic Hematology Analyzer, POCT</div>
         <div class="text" data-swiper-parallax="-100">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus
-            felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet
-            magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-            ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros
-            quis feugiat.</p>
+          <p>Single-use reagent kit, Free maintenance</p>
         </div>
       </div>
-      <div class="swiper-slide">
-        <div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">Slide 2</div>
-        <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+      <div class="swiper-slide" ata-slide-type="vdo">
+      <video id="my-player2" class="video-js" preload="auto" autoplay="autoplay" muted="muted" loop="loop" style="
+    position: absolute;
+    height: auto;
+    width: 100%;
+    z-index: -5;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%); /* This is a shorthand of
+                                         translateX(-50%) and translateY(-50%) */
+">
+          <source src="/assets/videos/96321_20230406152527A071.mp4" type="video/mp4">
+          </source>
+        </video>
+        <div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">DP-H10</div>
+        <div class="subtitle" data-swiper-parallax="-200">Automatic Hematology Analyzer, POCT</div>
         <div class="text" data-swiper-parallax="-100">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus
-            felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet
-            magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-            ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros
-            quis feugiat.</p>
+          <p>Single-use reagent kit, Free maintenance</p>
         </div>
       </div>
-      <div class="swiper-slide">
-        <div class="title" data-swiper-parallax="-300">Slide 3</div>
-        <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+      <div class="swiper-slide" ata-slide-type="vdo">
+      <video id="my-player3" class="video-js" preload="auto" autoplay="autoplay" muted="muted" loop="loop" style="
+    position: absolute;
+    height: auto;
+    width: 100%;
+    z-index: -5;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%); /* This is a shorthand of
+                                         translateX(-50%) and translateY(-50%) */
+">
+          <source src="/assets/videos/96619_20230406152456A069.mp4" type="video/mp4">
+          </source>
+        </video>
+        <div class="title" data-swiper-parallax="-300">DH-615</div>
+        <div class="subtitle" data-swiper-parallax="-200">AI Automatic Hematology Analyzer with RET</div>
         <div class="text" data-swiper-parallax="-100">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus
-            felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet
-            magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-            ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros
-            quis feugiat.</p>
+          <p>AI Cube Technology, Efficient, Comprehensive</p>
         </div>
       </div>
     </div>
@@ -49,12 +80,22 @@
 
   <!-- Initialize Swiper -->
   <script type="module">
-    /*import Swiper from 'swiper/swiper-bundle.mjs';
-    import 'swiper/swiper-bundle.css';*/
+    // variable 
+    var VIDEO_PLAYING_STATE = {
+      "PLAYING": "PLAYING",
+      "PAUSE": "PAUSE"
+    }
+    var videoPlayStatus = VIDEO_PLAYING_STATE.PAUSE
+    var timeout = null
+    var waiting = 3000
     var swiper = new Swiper('.swiper', {
       speed: 600,
       parallax: true,
       loop: true,
+      autoplay: {
+        delay: 8000,
+        disableOnInteraction: false,
+      },
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -64,12 +105,87 @@
         prevEl: '.swiper-button-prev',
       },
     });
+
+    // HTML5 vdo object
+    var options = {};
+    /*var player = videojs('my-player', options);
+    player.on('ended', function() {
+      next();
+    })
+
+    var player2 = videojs('my-player2', options);
+    player2.on('ended', function() {
+      next();
+    })*/
+
+
+    // swiper object
+    swiper.on('slideChangeTransitionEnd', function() {
+      var index = swiper.activeIndex
+      var currentSlide = $(swiper.slides[index])
+      var currentSlideType = currentSlide.data('slide-type')
+
+      // incase user click next before video ended
+      /*if (videoPlayStatus === VIDEO_PLAYING_STATE.PLAYING) {
+        player.pause();
+      }*/
+
+      clearTimeout(timeout);
+
+      switch (currentSlideType) {
+        case 'img':
+          runNext();
+          break;
+        case 'vdo':
+          player.currentTime(0)
+          player.play()
+          videoPlayStatus = VIDEO_PLAYING_STATE.PLAYING
+          break;
+        default:
+          throw new Error('invalid slide type');
+      }
+    });
+
+    // global function
+    function prev() {
+      swiper.slidePrev();
+    }
+
+    function next() {
+      swiper.slideNext();
+    }
+
+    function runNext() {
+      timeout = setTimeout(function() {
+        next()
+      }, waiting);
+    }
+
+    runNext();
+    /*import Swiper from 'swiper/swiper-bundle.mjs';
+    import 'swiper/swiper-bundle.css';*/
+    /*var swiper = new Swiper('.swiper', {
+      speed: 600,
+      parallax: true,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });*/
   </script>
-</div>
-<div class="container">
+  
 
   <!-- Top Deplay -->
-  <div class="row">
+  <div class="row my-2">
     <div class="col-md-8 mb-2">
       <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-inner">
@@ -310,4 +426,5 @@
 </div>
 <!-- ////////////////////  Nav card product  box  /////////////////////// -->
 
+<script src="/assets/js/video.min.js"></script>
 <script src="/assets/js/swiper-bundle.min.js"></script>
