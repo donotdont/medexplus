@@ -65,10 +65,10 @@
       <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="/assets/images/cover.png" class="d-block w-100" alt="...">
+            <img src="/assets/images/cover.jpg?v=<?= $version ?>" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="/assets/images/cover.png" class="d-block w-100" alt="...">
+            <img src="/assets/images/cover.jpg?v=<?= $version ?>" class="d-block w-100" alt="...">
           </div>
         </div>
       </div>
