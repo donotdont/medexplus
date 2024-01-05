@@ -20,10 +20,11 @@
         <li class="nav-item"><span class="nav-link px-2">|</span></li>
         <li class="nav-item"><a href="mailto:apdiagnostic11022022@gmail.com" class="nav-link link-dark px-2"><i class="fa-solid fa-envelope"></i> ivddiagnostic@gmail.com</a></li>
         <li class="nav-item"><span class="nav-link px-2">|</span></li>
-        <li class="nav-item"><a href="https://www.facebook.com/p/AP-Diagnostic-100084510518991" class="nav-link link-dark px-2" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+        <li class="nav-item"><a href="https://www.facebook.com/ap.medexplus" class="nav-link link-dark px-2" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
       </ul>
       <ul class="nav head-top-end">
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><i class="fa-solid fa-flag"></i> English</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><img src="/assets/images/en.png" alt="English" style="vertical-align: sub;"> English</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><img src="/assets/images/th.png" alt="Thai" style="vertical-align: sub;"> Thai</a></li>
         <li class="nav-item"><span class="nav-link px-2">|</span></li>
         <li class="nav-item"><a href="/login" class="nav-link link-dark px-2"><i class="fa-solid fa-user"></i> Log In</a></li>
         <li class="nav-item"><span class="nav-link px-2">|</span></li>

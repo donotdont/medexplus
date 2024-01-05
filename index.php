@@ -2,7 +2,7 @@
 header('Content-Type: text/html; charset=UTF-8');
 require_once __DIR__ . '/vendor/autoload.php';
 
-$version = "0.0.14";
+$version = "0.0.16";
 $request = urldecode($_SERVER['REQUEST_URI']);
 $urls = explode("/", $request);
 
