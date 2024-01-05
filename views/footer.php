@@ -5,7 +5,7 @@
       <div class="col-sm-3 text-center py-2">
         <i class="bi bi-geo-alt" style="font-size: 2rem"></i>
         <h4>Store location</h4>
-        <p>AP Diagnostics 199/44 Village No. 1, San Sai Luang Subdistrict, San Sai District, Chiang Mai, Thailand</p>
+        <p>AP Diagnostic 199/44 Village No. 1, San Sai Luang Subdistrict, San Sai District, Chiang Mai, Thailand</p>
       </div>
       <div class="col-sm-3 text-center py-2">
         <i class="bi bi-envelope" style="font-size: 2rem"></i>
