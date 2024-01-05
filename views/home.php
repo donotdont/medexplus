@@ -3,70 +3,27 @@
 <div class="container">
   <!-- Swiper -->
   <div class="swiper">
-    <div class="parallax-bg" data-swiper-parallax="-23%"></div>
     <div class="swiper-wrapper">
-      <div class="swiper-slide" data-slide-type="vdo">
-        <video id="my-player" class="video-js" preload="auto" autoplay="autoplay" muted="muted" loop="loop" style="
-    position: absolute;
-    height: auto;
-    width: 100%;
-    z-index: -5;
-    top: 50%;  /* position the top  edge of the element at the middle of the parent */
-    left: 50%; /* position the left edge of the element at the middle of the parent */
-
-    transform: translate(-50%, -50%); /* This is a shorthand of
-                                         translateX(-50%) and translateY(-50%) */
-">
-          <source src="/assets/videos/DP-H10_ppt_20221014102802A001.mp4" type="video/mp4">
-          </source>
-        </video>
-        <div class="title" data-swiper-parallax="-300">DP-H10</div>
-        <div class="subtitle" data-swiper-parallax="-200">Automatic Hematology Analyzer, POCT</div>
-        <div class="text" data-swiper-parallax="-100">
-          <p>Single-use reagent kit, Free maintenance</p>
-        </div>
+      <div class="swiper-slide">
+        <img class="img-responsive" src="/assets/images/cover1-2.jpg" />
       </div>
-      <div class="swiper-slide" ata-slide-type="vdo">
-      <video id="my-player2" class="video-js" preload="auto" autoplay="autoplay" muted="muted" loop="loop" style="
-    position: absolute;
-    height: auto;
-    width: 100%;
-    z-index: -5;
-    top: 50%;  /* position the top  edge of the element at the middle of the parent */
-    left: 50%; /* position the left edge of the element at the middle of the parent */
-
-    transform: translate(-50%, -50%); /* This is a shorthand of
-                                         translateX(-50%) and translateY(-50%) */
-">
-          <source src="/assets/videos/96321_20230406152527A071.mp4" type="video/mp4">
-          </source>
-        </video>
-        <div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">DP-H10</div>
-        <div class="subtitle" data-swiper-parallax="-200">Automatic Hematology Analyzer, POCT</div>
-        <div class="text" data-swiper-parallax="-100">
-          <p>Single-use reagent kit, Free maintenance</p>
-        </div>
+      <div class="swiper-slide">
+        <img class="img-responsive" src="/assets/images/cover1-1.jpg" />
       </div>
-      <div class="swiper-slide" ata-slide-type="vdo">
-      <video id="my-player3" class="video-js" preload="auto" autoplay="autoplay" muted="muted" loop="loop" style="
-    position: absolute;
-    height: auto;
-    width: 100%;
-    z-index: -5;
-    top: 50%;  /* position the top  edge of the element at the middle of the parent */
-    left: 50%; /* position the left edge of the element at the middle of the parent */
-
-    transform: translate(-50%, -50%); /* This is a shorthand of
-                                         translateX(-50%) and translateY(-50%) */
-">
-          <source src="/assets/videos/96619_20230406152456A069.mp4" type="video/mp4">
-          </source>
-        </video>
-        <div class="title" data-swiper-parallax="-300">DH-615</div>
-        <div class="subtitle" data-swiper-parallax="-200">AI Automatic Hematology Analyzer with RET</div>
-        <div class="text" data-swiper-parallax="-100">
-          <p>AI Cube Technology, Efficient, Comprehensive</p>
-        </div>
+      <div class="swiper-slide">
+        <img class="img-responsive" src="/assets/images/cover1.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img class="img-responsive" src="/assets/images/cover2.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img class="img-responsive" src="/assets/images/cover3.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img class="img-responsive" src="/assets/images/cover4.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img class="img-responsive" src="/assets/images/cover5.jpg" />
       </div>
     </div>
     <!-- Add Pagination -->
@@ -80,91 +37,9 @@
 
   <!-- Initialize Swiper -->
   <script type="module">
-    // variable 
-    var VIDEO_PLAYING_STATE = {
-      "PLAYING": "PLAYING",
-      "PAUSE": "PAUSE"
-    }
-    var videoPlayStatus = VIDEO_PLAYING_STATE.PAUSE
-    var timeout = null
-    var waiting = 3000
-    var swiper = new Swiper('.swiper', {
-      speed: 600,
-      parallax: true,
-      loop: true,
-      autoplay: {
-        delay: 8000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-
-    // HTML5 vdo object
-    var options = {};
-    /*var player = videojs('my-player', options);
-    player.on('ended', function() {
-      next();
-    })
-
-    var player2 = videojs('my-player2', options);
-    player2.on('ended', function() {
-      next();
-    })*/
-
-
-    // swiper object
-    swiper.on('slideChangeTransitionEnd', function() {
-      var index = swiper.activeIndex
-      var currentSlide = $(swiper.slides[index])
-      var currentSlideType = currentSlide.data('slide-type')
-
-      // incase user click next before video ended
-      /*if (videoPlayStatus === VIDEO_PLAYING_STATE.PLAYING) {
-        player.pause();
-      }*/
-
-      clearTimeout(timeout);
-
-      switch (currentSlideType) {
-        case 'img':
-          runNext();
-          break;
-        case 'vdo':
-          player.currentTime(0)
-          player.play()
-          videoPlayStatus = VIDEO_PLAYING_STATE.PLAYING
-          break;
-        default:
-          throw new Error('invalid slide type');
-      }
-    });
-
-    // global function
-    function prev() {
-      swiper.slidePrev();
-    }
-
-    function next() {
-      swiper.slideNext();
-    }
-
-    function runNext() {
-      timeout = setTimeout(function() {
-        next()
-      }, waiting);
-    }
-
-    runNext();
     /*import Swiper from 'swiper/swiper-bundle.mjs';
     import 'swiper/swiper-bundle.css';*/
-    /*var swiper = new Swiper('.swiper', {
+    var swiper = new Swiper('.swiper', {
       speed: 600,
       parallax: true,
       loop: true,
@@ -180,7 +55,7 @@
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-    });*/
+    });
   </script>
   
 
