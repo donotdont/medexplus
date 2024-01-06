@@ -402,5 +402,12 @@
 </div>
 <!-- ////////////////////  Nav card product  box  /////////////////////// -->
 
+<script src="/assets/js/home.js"></script>
+<script>
+  window.addEventListener("load", function(event) {
+    var home = new Home();
+    home.getCategory();
+  });
+</script>
 <script src="/assets/js/video.min.js"></script>
 <script src="/assets/js/swiper-bundle.min.js"></script>

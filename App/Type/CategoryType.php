@@ -22,6 +22,10 @@ class CategoryType extends ObjectType
 						'type' => Types::string(),
 						'description' => 'Category Name'
 					],
+					'count_item' => [
+						'type' => Types::int(),
+						'description' => 'Category Counter Item from Product'
+					],
 					'products' => [
 						'type' => Types::listOf(Types::product()),
 						'description' => 'Products',

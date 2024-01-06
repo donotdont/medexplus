@@ -44,6 +44,13 @@ class QueryType extends ObjectType
 							return DB::select("SELECT * FROM category");
 						}
 					],
+					'category_products' => [
+						'type' => Types::listOf(Types::category()),
+						'description' => 'Counter list of categories',
+						'resolve' => function ($root, $args) {
+							return DB::select("SELECT COUNT(p.id_product) AS count_item, c.* FROM product p LEFT JOIN category c ON c.id_category = p.id_category GROUP BY p.id_category,c.category_name");
+						}
+					],
 					'product' => [
 						'type' => Types::product(),
 						'description' => 'Returns the product by id_product',
