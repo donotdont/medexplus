@@ -5,26 +5,14 @@
   <div class="swiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <img class="img-responsive" src="/assets/images/cover1-2.jpg?v=<?= $version ?>" />
+        <img class="img-responsive" src="/assets/images/tube2222.png?v=<?= $version ?>" />
       </div>
       <div class="swiper-slide">
-        <img class="img-responsive" src="/assets/images/cover1-1.jpg?v=<?= $version ?>" />
+        <img class="img-responsive" src="/assets/images/Coagution.png?v=<?= $version ?>" />
       </div>
-      <div class="swiper-slide">
-        <img class="img-responsive" src="/assets/images/cover1.jpg?v=<?= $version ?>" />
-      </div>
-      <div class="swiper-slide">
-        <img class="img-responsive" src="/assets/images/cover2.jpg?v=<?= $version ?>" />
-      </div>
-      <div class="swiper-slide">
-        <img class="img-responsive" src="/assets/images/cover3.jpg?v=<?= $version ?>" />
-      </div>
-      <div class="swiper-slide">
-        <img class="img-responsive" src="/assets/images/cover4.jpg?v=<?= $version ?>" />
-      </div>
-      <div class="swiper-slide">
-        <img class="img-responsive" src="/assets/images/cover5.jpg?v=<?= $version ?>" />
-      </div>
+      <!-- <div class="swiper-slide">
+        <img class="img-responsive" src="/assets/images/cover.jpg?v=<?= $version ?>" />
+      </div>  -->
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination swiper-pagination-white"></div>
