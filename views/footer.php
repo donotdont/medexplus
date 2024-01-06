@@ -36,7 +36,7 @@
     <div class="container">
       <div class="row py-2">
         <div class="col-sm-6 my-2 text-sm-center text-md-start text-start">
-          <p class="mb-0">Copyright © 2023 AP DIAGNOSTIC | MED EX PLUS</p>
+          <p class="mb-0 py-1 d-block small">Copyright © 2023 AP DIAGNOSTIC | MED EX PLUS</p>
         </div>
         <div class="col-sm-6 my-2 text-sm-center text-md-end text-end">
           <img src="/assets/images/promptpay.png">

@@ -1,5 +1,5 @@
 <div class="container d-flex min-vh-100 justify-content-center align-items-center">
-    <div class="card">
+    <div class="card shadow-lg">
         <div class="card-header">
             <h5 style="text-align: center;">ใบเสนอราคา quotation</h5>
         </div>
