@@ -2,9 +2,15 @@
 
 node {
     try {
+            agent { docker { image 'node:20.10.0-alpine3.19' } }
             stage('Checkout GitHub') {
                 checkout scm
                 slackSend color: 'warning', message: "Started `${env.JOB_NAME}#${env.BUILD_NUMBER}`"
+            }
+
+            stage('Install module NPM') {
+                bat 'node --version'
+                bat 'npm install'
             }
 
             stage('Testing by Jest'){
