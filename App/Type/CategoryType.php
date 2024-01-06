@@ -18,11 +18,18 @@ class CategoryType extends ObjectType
 						'type' => Types::int(),
 						'description' => 'Category ID'
 					],
-					'name' => [
+					'category_name' => [
 						'type' => Types::string(),
-						'description' => 'Name'
+						'description' => 'Category Name'
 					],
-					'description' => [
+					'products' => [
+						'type' => Types::listOf(Types::product()),
+						'description' => 'Products',
+						'resolve' => function ($root) {
+							return DB::select("SELECT c.*, p.* FROM product p LEFT JOIN category c ON c.id_category = p.id_category WHERE p.id_category = {$root->id_category}");
+						}
+					]
+					/*'description' => [
 						'type' => Types::string(),
 						'description' => 'Descrition'
 					],
@@ -40,7 +47,7 @@ class CategoryType extends ObjectType
 						'resolve' => function ($root) {
 							return DB::select("SELECT c.*, p.* FROM product p LEFT JOIN category c ON c.id_category = p.id_product_category WHERE p.id_product_category = {$root->id_category}");
 						}
-					]
+					]*/
 				];
 			}
 		];

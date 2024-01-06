@@ -18,48 +18,60 @@ class ProductType extends ObjectType
 						'type' => Types::int(),
 						'description' => 'Product ID'
 					],
-					'id_product_category'=>[
+					'id_category'=>[
 						'type' => Types::int(),
 						'description' => 'Category ID'
 					],
-					'name' => [
+					'product_group' => [
 						'type' => Types::string(),
-						'description' => 'Name'
+						'description' => 'Product Group'
 					],
-					'model' => [
+					'product_cover' => [
 						'type' => Types::string(),
-						'description' => 'Model'
+						'description' => 'Product Cover'
 					],
-					'description' => [
+					'product_name' => [
 						'type' => Types::string(),
-						'description' => 'Descrition'
+						'description' => 'Product Name'
 					],
-					'handle' => [
+					'product_brand' => [
 						'type' => Types::string(),
-						'description' => 'Handle'
+						'description' => 'Product Brand'
 					],
-					'tag' => [
+					'product_description_th' => [
 						'type' => Types::string(),
-						'description' => 'Tag'
+						'description' => 'Descrition Thai'
 					],
-					'active' => [
+					'product_description_en' => [
+						'type' => Types::string(),
+						'description' => 'Descrition English'
+					],
+					'product_price' => [
+						'type' => Types::float(),
+						'description' => 'Product Price'
+					],
+					'product_quantity' => [
 						'type' => Types::int(),
-						'description' => 'Active'
+						'description' => 'Product Quantity'
+					],
+					'product_status' => [
+						'type' => Types::int(),
+						'description' => 'Product Status'
 					],
 					'category' => [
 						'type' => Types::category(),
 						'description' => 'Category',
 						'resolve' => function($root){
-							return DB::selectOne("SELECT p.*, c.* FROM category c LEFT JOIN product p ON p.id_product_category = c.id_category WHERE p.id_product = {$root->id_product}");
+							return DB::selectOne("SELECT p.*, c.* FROM category c LEFT JOIN product p ON p.id_category = c.id_category WHERE p.id_product = {$root->id_product}");
 						}
 					],
-					'attributes' => [
+					/*'attributes' => [
 						'type' => Types::attribute(),
 						'description' => 'Attribute',
 						'resolve' => function($root){
 							return DB::selectOne("SELECT p.*, a.* FROM attribute a LEFT JOIN product p ON p.id_product = a.id_product WHERE p.id_product = {$root->id_product}");
 						}
-					]
+					]*/
 				];
 			}
 		];

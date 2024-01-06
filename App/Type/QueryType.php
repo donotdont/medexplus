@@ -27,6 +27,44 @@ class QueryType extends ObjectType
 		$config = [
 			'fields' => function () {
 				return [
+					'category' => [
+						'type' => Types::category(),
+						'description' => 'Returns the category by id_category',
+						'args' => [
+							'id_category' => Types::nonNull(Types::int())
+						],
+						'resolve' => function ($root, $args) {
+							return DB::selectOne("SELECT * FROM category WHERE id_category = {$args['id_category']}");
+						}
+					],
+					'categories' => [
+						'type' => Types::listOf(Types::category()),
+						'description' => 'A list of categories',
+						'resolve' => function ($root, $args) {
+							return DB::select("SELECT * FROM category");
+						}
+					],
+					'product' => [
+						'type' => Types::product(),
+						'description' => 'Returns the product by id_product',
+						'args' => [
+							'id_product' => Types::nonNull(Types::int())
+						],
+						'resolve' => function ($root, $args) {
+							return DB::selectOne("SELECT * FROM product WHERE id_product = {$args['id_product']}");
+						}
+					],
+					'products' => [
+						'type' => Types::listOf(Types::product()),
+						'description' => 'A list of products',
+						'resolve' => function ($root, $args) {
+							return DB::select("SELECT * FROM product");
+						}
+					],
+
+
+
+
 					'menu_top' => [
 						'type' => Types::listOf(Types::menu_top()),
 						'description' => 'Returns the menu top',

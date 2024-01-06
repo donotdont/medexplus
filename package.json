@@ -1,0 +1,22 @@
+{
+  "name": "ap-medexplus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donotdont/medixplus-update.git"
+  },
+  "author": "Chutirat Chaisan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donotdont/medixplus-update/issues"
+  },
+  "homepage": "https://github.com/donotdont/medixplus-update#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

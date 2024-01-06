@@ -15,7 +15,7 @@ class DB
 	//private $host = "mysqldb";
 	//private $host = "db";
 	private $host = "localhost";
-	private $database_name = "etlghum";
+	private $database_name = "medexplus";
 	private $username = "root";
 	private $password = "";
 
