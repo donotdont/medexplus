@@ -387,7 +387,7 @@
 }
 
 .card {
-    min-height: 350px;
+    min-height: 300px;
 }
 
 .rounded-circle {
@@ -423,3 +423,138 @@ nav.nav.nav-pills.flex-column.flex-sm-row {
     transition: .7s;
     width: 50px;
 }
+
+.head-about {
+    border-left: 5px solid #3864f3;
+}
+
+/* Start Gallery and Ligthbox */
+
+.pswp-docs__home-gallery {
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr .5fr .5fr;
+    position: relative;
+    width: 100%
+}
+
+.pswp-docs__home-gallery-credit {
+    bottom: -21px;
+    font-size: 12px;
+    position: absolute;
+    right: 0
+}
+
+.pswp-docs__home-gallery .pswp-docs__home-gallery-item {
+    position: relative
+}
+
+figure.pswp-docs__home-gallery-item {
+    display: block;
+    margin: 0;
+    padding: 0
+}
+
+#docusaurus-base-url-issue-banner-container,.pswp-docs__home-gallery-item figcaption,.theme-code-block--hidden {
+    display: none
+}
+
+.pswp-docs__home-gallery .pswp-docs__home-gallery-item img {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.pswp-docs__home-gallery .pswp-docs__home-gallery-item:first-child {
+    grid-row: span 2
+}
+
+.pswp-docs__home-gallery .pswp-docs__home-gallery-item a {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%
+}
+
+.pswp-docs__home-gallery-example {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+.pswp-docs__home-gallery-example a {
+    display: block;
+    line-height: 0;
+    margin: 0 4px 4px 0;
+    position: relative
+}
+
+.pswp-docs__home-gallery-example img {
+    left: 0;
+    max-width: none;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+
+.pswp-docs__home-gallery .pswp-docs__home-gallery-item img {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.pswp-docs__home-gallery .pswp-docs__home-gallery-item:first-child {
+    grid-row: span 2
+}
+
+.pswp-docs__home-gallery .pswp-docs__home-gallery-item a {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%
+}
+
+.pswp-docs__home-gallery-example {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+.pswp-docs__home-gallery-example a {
+    display: block;
+    line-height: 0;
+    margin: 0 4px 4px 0;
+    position: relative
+}
+
+.pswp-docs__home-gallery-example img {
+    left: 0;
+    max-width: none;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.pswp-docs__home-block h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 70px auto 36px
+}
+
+/* End Gallery and Ligthbox */
