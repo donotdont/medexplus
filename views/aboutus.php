@@ -135,7 +135,7 @@
               <img sizes="(min-width: 1124px) 393px, 35vw" srcset="/assets/images/event12.jpg" alt="">
             </a>
           </figure>
-          <div class="pswp-docs__home-gallery-credit">Photos by Luca Bravo</div>
+         
         </div>
       </div>
     </div>
