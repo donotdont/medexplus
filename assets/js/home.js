@@ -1,19 +1,19 @@
 class Home {
     urls;
     template = `<div class="col-md-3">
-    <div class="card mb-2">
-      <img class="img-fluid img-fluid" src="/assets/images/tube-red.png" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">#NAME#</h5>
-        <p class="card-text"></p>
-      </div>
-      <div class="card-footer">
-        <button type="button" class="btn btn-link btn-sm"><i class="fa-solid fa-heart" style="font-size: 1.5em;color:#dddddd"></i></button>
-        <button type="button" class="btn btn-success btn-sm">Buy Now</button>
-      </div>
-    </div>
-  </div>`;
-    constructor(){
+        <div class="card mb-2">
+        <a class="link" href="#LINK#"><img class="img-fluid img-fluid" src="/assets/images/tube-red.png" alt=""></a>
+        <div class="card-body">
+            <h5 class="card-title">#NAME#</h5>
+            <p class="card-text">#GROUP#</p>
+        </div>
+        <div class="card-footer">
+            <button type="button" class="btn btn-link btn-sm"><i class="fa-solid fa-heart" style="font-size: 1.5em;color:#dddddd"></i></button>
+            #BTNACTION#
+        </div>
+        </div>
+    </div>`;
+    constructor() {
         this.urls = window.location.origin + "/graphql/";
     }
     getProduct() {
@@ -28,9 +28,16 @@ class Home {
                     console.log(result.data);
                     document.querySelector('.product').innerHTML = '';
                     let productHTML = '';
-                    result.data.products.forEach(function(product,index){
+                    result.data.products.forEach(function (product, index) {
                         let newProductHTML = templateHTML;
                         newProductHTML = newProductHTML.replace(/#NAME#/g, product.product_name);
+                        newProductHTML = newProductHTML.replace(/#GROUP#/g, product.product_group);
+                        newProductHTML = newProductHTML.replace(/#LINK#/g, "/product/" + product.id_product);
+                        if(product.product_price){
+                            newProductHTML = newProductHTML.replace(/#BTNACTION#/g, `<button type="button" class="btn btn-success btn-sm">Buy Now</button>`);
+                        }else{
+                            newProductHTML = newProductHTML.replace(/#BTNACTION#/g, `<button type="button" class="btn btn-success btn-sm">Quotation</button>`);
+                        }
                         productHTML += newProductHTML
                     });
                     document.querySelector('.product').innerHTML = productHTML;
@@ -43,7 +50,9 @@ class Home {
                 products(id_category:$id_category){
                   id_product
                   product_name
+                  product_group
                   product_brand
+                  product_price
                   category{
                     id_category
                     category_name
@@ -52,7 +61,7 @@ class Home {
               }`,
             variables: {
                 "id_category": document.querySelector('input[name="listGroupCheckableRadios"]:checked').value ? parseInt(document.querySelector('input[name="listGroupCheckableRadios"]:checked').value) : 1
-              }
+            }
         };
         xmlhttp.send(JSON.stringify(query));
     }

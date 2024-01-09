@@ -9,7 +9,7 @@
   <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="/assets/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/doode.css?v=<?= $version ?>">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/assets/css/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -50,7 +50,7 @@
           <li class="nav-item"><a class="nav-item nav-link" href="/shop">Shop</a></li>
           <li class="nav-item"><a class="nav-item nav-link" href="/aboutus">About us</a></li>
           <li class="nav-item"><a class="nav-item nav-link" href="/contact">Contact us</a></li>
-          <li class="nav-item pt-1"><a href="/quatation" target="_blank" class="btn btn-success btn-sm"><i class="bi bi-file-earmark-medical"></i> ใบเสนอราคา</a></li>
+          <li class="nav-item pt-1"><a href="/quatation" class="btn btn-success btn-sm"><i class="bi bi-file-earmark-medical"></i> ใบเสนอราคา</a></li>
           <!-- <li class="nav-item"><a href="/quatation" target="_blank" class="nav-link"><button type="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-plus-square"></i> create quatation</a></li>
           <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-user"></i></a></li> -->
           <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-magnifying-glass" style="font-size: 1.5em;"></i></a></li>
