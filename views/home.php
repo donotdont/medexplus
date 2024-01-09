@@ -166,7 +166,7 @@
       </div>
     </div>
     <div class="col-md-9">
-      <div class="row">
+      <div class="row product">
 
         <div class="col-md-3">
           <div class="card mb-2">
@@ -407,6 +407,14 @@
   window.addEventListener("load", function(event) {
     var home = new Home();
     home.getCategory();
+    home.getProduct();
+
+    document.querySelectorAll('input[name="listGroupCheckableRadios"]').forEach(function(input) {
+        input.addEventListener('change',function(event) {
+          //console.log(event, event.target.id, event.target.value);
+          home.getProduct();
+      });
+    });
   });
 </script>
 <script src="/assets/js/video.min.js"></script>

@@ -64,8 +64,14 @@ class QueryType extends ObjectType
 					'products' => [
 						'type' => Types::listOf(Types::product()),
 						'description' => 'A list of products',
+						'args' => [
+							'id_category' => Types::int()
+						],
 						'resolve' => function ($root, $args) {
-							return DB::select("SELECT * FROM product");
+							if (!empty($args['id_category']))
+								return DB::select("SELECT p.*,c.* FROM product p LEFT JOIN category c ON c.id_category = p.id_category WHERE c.id_category = {$args['id_category']}");
+							else
+								return DB::select("SELECT * FROM product");
 						}
 					],
 
