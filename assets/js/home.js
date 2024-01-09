@@ -2,7 +2,7 @@ class Home {
     urls;
     template = `<div class="col-md-3">
         <div class="card mb-2">
-        <a class="link" href="#LINK#"><img class="img-fluid img-fluid" src="/assets/images/tube-red.png" alt=""></a>
+        <a class="link" href="#LINK#"><img class="img-fluid img-fluid" src="#IMG#" alt=""></a>
         <div class="card-body">
             <h5 class="card-title">#NAME#</h5>
             <p class="card-text">#GROUP#</p>
@@ -30,6 +30,7 @@ class Home {
                     let productHTML = '';
                     result.data.products.forEach(function (product, index) {
                         let newProductHTML = templateHTML;
+                        newProductHTML = newProductHTML.replace(/#IMG#/g, product.product_cover ? product.product_cover : "/assets/images/products/no-image.jpg");
                         newProductHTML = newProductHTML.replace(/#NAME#/g, product.product_name);
                         newProductHTML = newProductHTML.replace(/#GROUP#/g, product.product_group);
                         newProductHTML = newProductHTML.replace(/#LINK#/g, "/product/" + product.id_product);
@@ -49,6 +50,7 @@ class Home {
             query: `query getProduct($id_category: Int){
                 products(id_category:$id_category){
                   id_product
+                  product_cover
                   product_name
                   product_group
                   product_brand

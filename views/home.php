@@ -168,12 +168,51 @@
     <div class="col-md-9">
       <div class="row product">
 
-        <div class="col-md-3">
+        <div class="col-md-3 loading-skeleton">
           <div class="card mb-2">
-            <img class="img-fluid img-fluid" src="/assets/images/tube-red.png" alt="Card image cap">
+            <img class="img-fluid img-fluid" src="/assets/images/products/no-image.jpg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Innomed Tube </h5>
-              <p class="card-text"></p>
+              <p class="card-text">Some quick example text.</p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-link btn-sm"><i class="fa-solid fa-heart" style="font-size: 1.5em;color:#dddddd"></i></button>
+              <button type="button" class="btn btn-success btn-sm">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 loading-skeleton">
+          <div class="card mb-2">
+            <img class="img-fluid img-fluid" src="/assets/images/products/no-image.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Innomed Tube </h5>
+              <p class="card-text">Some quick example text.</p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-link btn-sm"><i class="fa-solid fa-heart" style="font-size: 1.5em;color:#dddddd"></i></button>
+              <button type="button" class="btn btn-success btn-sm">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 loading-skeleton">
+          <div class="card mb-2">
+            <img class="img-fluid img-fluid" src="/assets/images/products/no-image.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Innomed Tube </h5>
+              <p class="card-text">Some quick example text.</p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-link btn-sm"><i class="fa-solid fa-heart" style="font-size: 1.5em;color:#dddddd"></i></button>
+              <button type="button" class="btn btn-success btn-sm">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 loading-skeleton">
+          <div class="card mb-2">
+            <img class="img-fluid img-fluid" src="/assets/images/products/no-image.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Innomed Tube </h5>
+              <p class="card-text">Some quick example text.</p>
             </div>
             <div class="card-footer">
               <button type="button" class="btn btn-link btn-sm"><i class="fa-solid fa-heart" style="font-size: 1.5em;color:#dddddd"></i></button>
