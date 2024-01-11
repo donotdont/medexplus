@@ -2,7 +2,7 @@
   <div class="row">
     <!-- AP DIAGNOSTIC CO., LTD. -->
     <div class="col-md-6">
-      <div class="card text-center">
+      <div class="card text-center shadow-lg">
         <div class="card-header">
           <h6>AP DIAGNOSTIC CO., LTD.</h6>
         </div>
@@ -35,7 +35,7 @@
 
     <!-- MED EX PLUS LIMITED PARTNERSHIP -->
     <div class="col-md-6">
-      <div class="card text-center">
+      <div class="card text-center shadow-lg">
         <div class="card-header">
           <h6>MED EX PLUS LIMITED PARTNERSHIP</h6>
         </div>
