@@ -17,6 +17,10 @@ if (!empty($request)) {
         require __DIR__ . '/views/header.php';
         require __DIR__ . '/views/store.php';
         require __DIR__ . '/views/footer.php';
+    } else if (!empty($urls[1]) && ($urls[1] == 'cart')) {
+        require __DIR__ . '/views/header.php';
+        require __DIR__ . '/views/cart.html';
+        require __DIR__ . '/views/footer.php';
     } else if (!empty($urls[1]) && ($urls[1] == 'pdf-quatation')) {
         require __DIR__ . '/views/header.php';
         require __DIR__ . '/views/pdf-quatation.php';
