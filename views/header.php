@@ -55,7 +55,7 @@
           <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-user"></i></a></li> -->
           <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-magnifying-glass" style="font-size: 1.5em;"></i></a></li>
           <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-heart" style="font-size: 1.5em;"></i></a></li>
-          <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-bag-shopping position-relative" style="font-size: 1.5em;"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary" style="font-size: 0.5em;">99<span class="visually-hidden">unread cart</span></span></i></a></li>
+          <li class="nav-item"><a href="/cart" class="nav-link"><i class="fa-solid fa-bag-shopping position-relative" style="font-size: 1.5em;"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary" style="font-size: 0.5em;">99<span class="visually-hidden">unread cart</span></span></i></a></li>
         </ul>
       </div>
     </div>
