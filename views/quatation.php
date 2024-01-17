@@ -22,7 +22,7 @@
                                 <h5>ที่อยู่</h5>
                                 <h6>Address</h6>
                             </label>
-                            <input type="email" class="form-control" id="add-cus" placeholder="">
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
                         </div>
                     </div>
                     <div class="col-12">
@@ -39,51 +39,56 @@
                 </div>
 
                 <div class="mb-3">
-                    <div class="row">
-                        <div class="col-4">
-                            <label for="Select1">
-                                <h5>รายละเอียด </h5>
-                                <h6>Description</h6>
-                            </label>
-                            <select class="form-control" id="Select1">
-                                <option>DF50</option>
-                                <option>UN73</option>
-                                <option>DP-H10</option>
-                                <option>DP-C16</option>
-                                <option>---</option>
-                            </select>
-                        </div>
-                        <div class="col-2"> <label for="Qt" class="form-label">
-                                <h5>ราคา</h5>
-                                <h6>Unit cost</h6>
-                            </label>
-                            <input type="email" class="form-control" id="Qt" placeholder="">
-                        </div>
-                        <div class="col-3"> <label for="Qtr" class="form-label">
-                                <h5>ราคาต่อหน่วย</h5>
-                                <h6>Qtr</h6>
-                            </label>
-                            <input type="email" class="form-control" id="Qtr" placeholder="">
-                        </div>
-                        <div class="col-3"> <label for="Amount" class="form-label">
-                                <h5>รวม</h5>
-                                <h6>Amount</h6>
-                            </label>
-                            <input type="email" class="form-control" id="Amount" placeholder="">
-                        </div>
+                    <label for="cus-name" class="form-label">
+                        <h5>สินค้า</h5>
+                        <h6>Product</h6>
+                    </label>
+                </div>
+
+                <div class="mb-3">
+                    <div class="table-responsive">
+                        <table class="table shoping-cart-table">
+                            <tbody>
+                                <tr>
+                                    <td width="90">
+                                        <div class="cart-product-imitation">
+                                        </div>
+                                    </td>
+                                    <td class="desc">
+                                        <h3>
+                                            <a href="#" class="text-navy">
+                                                DF50
+                                            </a>
+                                        </h3>
+                                        <p class="small">
+                                            Flow cytometry (FCM) + Tri-angle laser scatter for WBC differentiation
+                                            Impedance method for WBC, RBC and PLT test
+                                            Cyanide free colorimetry for HGB test
+                                            Latex-enhanced scattering immunoturbidimetry for CRP test
+                                        </p>
+
+                                        <div class="m-t-sm">
+
+                                            <a href="#" class="text-muted"><i class="fa fa-trash"></i> Remove
+                                                item</a>
+                                        </div>
+                                    </td>
+
+                                    <td width="65">
+                                        <input type="text" class="form-control" placeholder="1">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
 
                 </div>
             </blockquote>
         </div>
 
-
-
-        <div class="card-footer col-12  text-muted">
-
-            <div class="sum1 " style="float:left;"><b>SUBTOTAL</b></div>
-            <div class="sum2" style="float:right;"><b>0.00</b><p>bath</p></div>
-
+        <div class="card-footer">
+            <button class="btn btn-success float-end">Quotation</button>
+            <button class="btn btn-white"><i class="fa fa-arrow-left"></i> Continue shopping</button>
         </div>
     </div>
 </div>

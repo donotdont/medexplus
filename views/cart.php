@@ -59,13 +59,6 @@
                                 </table>
                             </div>
                         </div>
-
-                    </div>
-                    <div class="card-footer">
-                        <button class="btn btn-success float-end"><i class="fa fa fa-shopping-cart"></i>
-                            Checkout</button>
-                        <button class="btn btn-white"><i class="fa fa-arrow-left"></i> Continue shopping</button>
-
                     </div>
                 </div>
 
