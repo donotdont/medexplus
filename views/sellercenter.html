@@ -1,0 +1,214 @@
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+
+<link rel="stylesheet" href="/assets/css/cart.css">
+<div class="container">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+
+            <!--/////////////////////////////////////////// Box Proflie Customer ////////////////////////////////////////////-->
+            <div class="col-md-3">
+
+                <nav class="col-md-8  bg-light sidebar vertical-nav">
+                    <div class="sidebar-sticky">
+                        <ul class="nav flex-column">
+                            <li class="nav-item custom-btn">
+                                <a class="nav-link active" href="#" style="text-align: justify;">
+                                    <i class="bi bi-file"></i>&nbsp;คำสั่งซื้อ
+                                </a>
+                            </li>
+                            <li class="nav-item custom-btn">
+                                <a class="nav-link" href="#" style="text-align: justify;">
+                                    <i class="bi bi-basket2"></i>&nbsp;สินค้า
+                                </a>
+                            </li>
+                            <li class="nav-item custom-btn">
+                                <a class="nav-link" href="#" style="text-align: justify;">
+                                    <i class="bi bi-truck"></i> &nbsp;สถานะการจัดส่ง
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+
+
+
+
+            <style>
+                /* Add custom styles for the vertical navigation bar */
+                .vertical-nav {
+                    height: 100%;
+                }
+
+                .vertical-nav .nav-link {
+                    padding: 15px;
+                    text-align: center;
+                }
+
+                .vertical-nav .nav-item {
+                    width: 100%;
+                }
+
+
+                .custom-btn:hover {
+                    background-color: #e8e8e8;
+
+                    color: #ffffff;
+                }
+            </style>
+
+            <!--//////////////////////////////////////////////////// Box Proflie Customer ///////////////////////////////-->
+
+
+
+
+
+
+
+
+
+            <!--//////////////////////////////// Box details รายการที่สั่งซื้อ /////////////////////////////////////////////-->
+
+            <div class="col-md-9">
+
+      
+
+                <div class="card" style="min-height: 300px;">
+
+                    <nav class="navbar navbar-expand-lg bg-light">
+                        <div class="container-fluid">
+                          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                              <a class="nav-link active" aria-current="page" href="#">ที่ต้องจัดส่ง</a>
+                              <a class="nav-link" href="#">กำลังจัดส่ง</a>
+                              <a class="nav-link" href="#">สำเร็จ</a>
+                              <a class="nav-link" href="#">การยกเลิก</a>
+                            </div>
+                          </div>
+                        </div>
+                      </nav>
+
+
+                      
+
+                    <div class="card-body" style="margin-top: 70px; margin-left: 100px;">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <i class="bi bi-calendar-event"></i>
+                                วันที่
+                                <input type="text" class="form-control datepicker" placeholder="Select a date">
+                            </div>
+
+                            <div class="col-md-1">
+                             
+                            </div>
+
+                            <div class="col-md-6">
+                                ประเภท
+                                <div class="input-group mb-4">
+
+                                    <select class="custom-select" id="inputGroupSelect02"
+                                        style=" width:60%; border: 1px solid #eee;">
+                                        <option selected>Search</option>
+                                        <option value="1">ชื่อสินค้า</option>
+                                        <option value="2">รหัสสินค้า</option>
+
+                                    </select>
+                                    <div class="input-group-append">
+                                        <label class="input-group-text" for="inputGroupSelect02"><i
+                                                class="bi bi-search"></i></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    $(document).ready(function () {
+                        $('.datepicker').datepicker();
+                    });
+                </script>
+
+
+                <div class="card mb-2" style="margin-top: 30px;">
+                    <div class="card-header flex-wrap">
+                        <span class="float-end"> หมายเลขคำสั่งซื้อ xxxxxxx</span>
+                        <h5 class="m-0">User name:xxxxxxx</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-content">
+                            <div class="table-responsive">
+                                <table class="table shoping-cart-table">
+                                    <tbody>
+                                        <tr>
+                                            <td width="90">
+                                                <div class="cart-product-imitation">
+                                                </div>
+                                            </td>
+                                            <td class="desc">
+                                                <h3>
+                                                    <a href="#" class="text-navy">
+                                                        DF50
+                                                    </a>
+                                                </h3>
+                                                <p class="small">
+                                                    Flow cytometry (FCM) + Tri-angle laser scatter for WBC
+                                                    differentiation
+                                                    Impedance method for WBC, RBC and PLT test
+                                                    Cyanide free colorimetry for HGB test
+                                                    Latex-enhanced scattering immunoturbidimetry for CRP test
+                                                </p>
+
+                                                <!-- <dl class="small m-b-none">
+                                                    <dt>Decout 5%</dt>
+                                                    <dd>xxxx,xx</dd>
+                                                </dl> -->
+
+                                                <!-- <div class="m-t-sm"> </div> -->
+                                            </td>
+
+                                            <td>
+                                                $180,00
+                                                <s class="small text-muted">$230,00</s>
+                                            </td>
+                                            <td width="65">
+                                                <input type="text" class="form-control" placeholder="1">
+                                            </td>
+                                            <td>
+                                                <h4>
+                                                    $180,00
+                                                </h4>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="col-md-12"
+                                    style="background-color: antiquewhite; border-bottom: solid 1px #dcdcdc;"></div>
+
+
+                                <div class="col-md-12" style="text-align: end; margin-top: 15px;">
+
+                                    <i class="bi bi-cash"></i> &nbsp; รวมเป็นเงินทั้งสิน 200,000 บาท
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
