@@ -21,6 +21,22 @@ if (!empty($request)) {
         require __DIR__ . '/views/header.php';
         require __DIR__ . '/views/cart.php';
         require __DIR__ . '/views/footer.php';
+    } else if (!empty($urls[1]) && ($urls[1] == 'user')) {
+        require __DIR__ . '/views/header.php';
+        require __DIR__ . '/views/cil-new.html';
+        require __DIR__ . '/views/footer.php';
+    } else if (!empty($urls[1]) && ($urls[1] == 'seller')) {
+        require __DIR__ . '/views/header.php';
+        require __DIR__ . '/views/sellercenter.html';
+        require __DIR__ . '/views/footer.php';
+    } else if (!empty($urls[1]) && ($urls[1] == 'product-set')) {
+        require __DIR__ . '/views/header.php';
+        require __DIR__ . '/views/product-set.html';
+        require __DIR__ . '/views/footer.php';
+    } else if (!empty($urls[1]) && ($urls[1] == 'add-product')) {
+        require __DIR__ . '/views/header.php';
+        require __DIR__ . '/views/add-product.html';
+        require __DIR__ . '/views/footer.php';
     } else if (!empty($urls[1]) && ($urls[1] == 'pdf-quatation')) {
         require __DIR__ . '/views/header.php';
         require __DIR__ . '/views/pdf-quatation.php';
