@@ -37,7 +37,7 @@ class Home {
                         if(product.product_price){
                             newProductHTML = newProductHTML.replace(/#BTNACTION#/g, `<button type="button" class="btn btn-success btn-sm">Buy Now</button>`);
                         }else{
-                            newProductHTML = newProductHTML.replace(/#BTNACTION#/g, `<button type="button" class="btn btn-success btn-sm">Quotation</button>`);
+                            newProductHTML = newProductHTML.replace(/#BTNACTION#/g, `<a href="/quatation/${product.id_product}" class="btn btn-success btn-sm">Quotation</a>`);
                         }
                         productHTML += newProductHTML
                     });
@@ -47,7 +47,7 @@ class Home {
         }
 
         var query = {
-            query: `query getProduct($id_category: Int){
+            query: `query getProducts($id_category: Int){
                 products(id_category:$id_category){
                   id_product
                   product_cover
