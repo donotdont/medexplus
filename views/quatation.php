@@ -47,39 +47,7 @@
 
                 <div class="mb-3">
                     <div class="table-responsive">
-                        <table class="table shoping-cart-table">
-                            <tbody>
-                                <tr>
-                                    <td width="90">
-                                        <div class="cart-product-imitation">
-                                        </div>
-                                    </td>
-                                    <td class="desc">
-                                        <h3>
-                                            <a href="#" class="text-navy">
-                                                DF50
-                                            </a>
-                                        </h3>
-                                        <p class="small">
-                                            Flow cytometry (FCM) + Tri-angle laser scatter for WBC differentiation
-                                            Impedance method for WBC, RBC and PLT test
-                                            Cyanide free colorimetry for HGB test
-                                            Latex-enhanced scattering immunoturbidimetry for CRP test
-                                        </p>
-
-                                        <div class="m-t-sm">
-
-                                            <a href="#" class="text-muted"><i class="fa fa-trash"></i> Remove
-                                                item</a>
-                                        </div>
-                                    </td>
-
-                                    <td width="65">
-                                        <input type="text" class="form-control" placeholder="1">
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                  
                     </div>
 
                 </div>
@@ -87,8 +55,16 @@
         </div>
 
         <div class="card-footer">
-            <button class="btn btn-success float-end">Quotation</button>
+            <button class="btn btn-success float-end">Send</button>
             <button class="btn btn-white"><i class="fa fa-arrow-left"></i> Continue shopping</button>
         </div>
     </div>
 </div>
+<script src="/assets/js/quatation.js?v=<?= $version ?>"></script>
+<script>
+  window.addEventListener("load", function(event) {
+    var quatation = new Quatation();
+    quatation.getProduct();
+
+  });
+</script>
