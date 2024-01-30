@@ -37,7 +37,7 @@ class Home {
                         if(product.product_price){
                             newProductHTML = newProductHTML.replace(/#BTNACTION#/g, `<button type="button" class="btn btn-success btn-sm">Buy Now</button>`);
                         }else{
-                            newProductHTML = newProductHTML.replace(/#BTNACTION#/g, `<a href="/quatation/${product.id_product}" class="btn btn-success btn-sm">Quotation</a>`);
+                            newProductHTML = newProductHTML.replace(/#BTNACTION#/g, `<a href="/quotation/${product.id_product}" class="btn btn-success btn-sm">Quotation</a>`);
                         }
                         productHTML += newProductHTML
                     });

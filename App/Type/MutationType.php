@@ -73,6 +73,24 @@ class MutationType extends ObjectType
         $config = [
             'fields' => function () {
                 return [
+                    'create_quotation' => [
+                        'type' => Types::quotation(),
+                        'description' => 'Adding new quotation',
+                        'args' => [
+                            'id_product' => Types::nonNull(Types::int()),
+                            'quotation_quantity' => Types::nonNull(Types::int()),
+                            'quotation_customer_name' => Types::nonNull(Types::string()),
+                            'quotation_customer_address' => Types::nonNull(Types::string()),
+                            'quotation_customer_phone' => Types::nonNull(Types::string()),
+                        ],
+                        'resolve' => function ($root, $args) {
+                            $newQuotation = DB::insert("INSERT INTO quotation (id_product, quotation_quantity, quotation_customer_name, quotation_customer_address, quotation_customer_phone) VALUES ({$args['id_product']},{$args['quotation_quantity']},'{$args['quotation_customer_name']}','{$args['quotation_customer_address']}','{$args['quotation_customer_phone']}')");
+                            return DB::selectOne("SELECT * FROM quotation WHERE id_quotation = $newQuotation");
+                        }
+                    ],
+
+
+
                     'create_menu_top' => [
                         'type' => Types::menu_top(),
                         'description' => 'Adding a menu top',

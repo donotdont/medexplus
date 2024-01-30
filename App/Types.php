@@ -10,6 +10,10 @@ use App\Type\PermissionType;
 
 use App\Type\CategoryType;
 use App\Type\ProductType;
+use App\Type\CustomerType;
+use App\Type\QuotationType;
+
+
 use App\Type\AttributeType;
 use App\Type\AddressType;
 
@@ -53,6 +57,8 @@ class Types
     private static $datetimeType;
     private static $role;
     private static $permission;
+    private static $customer;
+    private static $quotation;
 
     private static $menu_top;
     private static $menu_main;
@@ -217,6 +223,16 @@ class Types
     public static function online_tracking()
     {
         return self::$online_tracking ?: (self::$online_tracking = new OnlineTrackingType());
+    }
+    
+    public static function customer()
+    {
+        return self::$customer ?: (self::$customer = new CustomerType());
+    }
+    
+    public static function quotation()
+    {
+        return self::$quotation ?: (self::$quotation = new QuotationType());
     }
 
     public static function id()

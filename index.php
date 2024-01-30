@@ -2,7 +2,7 @@
 header('Content-Type: text/html; charset=UTF-8');
 require_once __DIR__ . '/vendor/autoload.php';
 
-$version = "0.0.44";
+$version = "0.0.50";
 $request = urldecode($_SERVER['REQUEST_URI']);
 $urls = explode("/", $request);
 
@@ -37,13 +37,13 @@ if (!empty($request)) {
         require __DIR__ . '/views/header.php';
         require __DIR__ . '/views/add-product.html';
         require __DIR__ . '/views/footer.php';
-    } else if (!empty($urls[1]) && ($urls[1] == 'pdf-quatation')) {
+    } else if (!empty($urls[1]) && ($urls[1] == 'pdf-quotation')) {
         require __DIR__ . '/views/header.php';
-        require __DIR__ . '/views/pdf-quatation.php';
+        require __DIR__ . '/views/pdf-quotation.php';
         require __DIR__ . '/views/footer.php';
-    } else if (!empty($urls[1]) && ($urls[1] == 'quatation')) {
+    } else if (!empty($urls[1]) && ($urls[1] == 'quotation')) {
         require __DIR__ . '/views/header.php';
-        require __DIR__ . '/views/quatation.php';
+        require __DIR__ . '/views/quotation.php';
         require __DIR__ . '/views/footer.php';
     } else if (!empty($urls[1]) && ($urls[1] == 'contact')) {
         require __DIR__ . '/views/header.php';
@@ -75,7 +75,7 @@ if (!empty($request)) {
         ]);
         $stylesheet = file_get_contents(__DIR__ . '/assets/css/bootstrap.min.css');
         $mpdf->WriteHTML($stylesheet, 1); // CSS Script goes here.
-        $mpdf->WriteHTML(file_get_contents(__DIR__ . '/views/pdf-quatation.php'));
+        $mpdf->WriteHTML(file_get_contents(__DIR__ . '/views/pdf-quotation.php'));
         $mpdf->Output();
     } else {
         require __DIR__ . '/views/header.php';
