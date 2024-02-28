@@ -1,8 +1,8 @@
 class Product {
     urls;
-    template = `<h4>5-Part+CRP Tests Combined within One Machine</h4>
+    template = `<h4>#product_group#</h4>
     <h1 class="fontH">#product_name#</h1>
-    <h4>Compact, Reliable, User-friendly</h4>
+    <h4>#product_brand#</h4>
 
     <p class="fontP">#product_description#</p>
     <img src="#product_cover#">`;
@@ -26,6 +26,8 @@ class Product {
                     newProductHTML = newProductHTML.replace(/#product_cover#/g, product.product_cover ? product.product_cover : "/assets/images/products/no-image.jpg");
                     newProductHTML = newProductHTML.replace(/#product_name#/g, product.product_name);
                     newProductHTML = newProductHTML.replace(/#product_description#/g, product.product_description_en ? product.product_description_en : "-- Not Found --" );
+                    newProductHTML = newProductHTML.replace(/#product_group#/g, product.product_group );
+                    newProductHTML = newProductHTML.replace(/#product_brand#/g, product.product_brand );
 
                     /*if (product.product_price) {
                         newProductHTML = newProductHTML.replace(/#BTNACTION#/g, `<button type="button" class="btn btn-success btn-sm">Buy Now</button>`);
@@ -43,6 +45,8 @@ class Product {
                   id_product
                   product_name
                   product_cover
+                  product_group
+                  product_brand
                   product_description_en
                   category{
                     id_category
