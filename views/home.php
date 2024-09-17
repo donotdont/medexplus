@@ -5,14 +5,14 @@
   <div class="swiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <img class="img-responsive" src="/assets/images/tube2222.png?v=<?= $version ?>" />
+        <img class="img-responsive" src="/assets/images/slider-chemistry-exc220.jpg?v=<?= $version ?>" />
       </div>
       <div class="swiper-slide">
-        <img class="img-responsive" src="/assets/images/Coagution.png?v=<?= $version ?>" />
+        <img class="img-responsive" src="/assets/images/slider-dp-c16.jpg?v=<?= $version ?>" />
       </div>
-      <!-- <div class="swiper-slide">
-        <img class="img-responsive" src="/assets/images/cover.jpg?v=<?= $version ?>" />
-      </div>  -->
+      <div class="swiper-slide">
+        <img class="img-responsive" src="/assets/images/slider-chemistry-pointcare-m4.jpg?v=<?= $version ?>" />
+      </div>
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination swiper-pagination-white"></div>
@@ -49,7 +49,7 @@
 
   <!-- Top Deplay -->
   <div class="row my-2">
-    <div class="col-md-8 mb-2">
+    <div class="col-md-12">
       <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -61,7 +61,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4">
+    <!--<div class="col-md-4">
       <div class="row">
         <img src="/assets/images/rect3.png" class="img-fluid" style="min-height: 200px;">
         <div class="col-4"></div>
@@ -74,7 +74,7 @@
         <div class="col-4"> <a href="#" class="btn btn-success btn-sm" style="margin-top:-150px;">Buy Now</a></div>
         <div class="col-4"></div>
       </div>
-    </div>
+    </div>-->
   </div>
 </div>
 
