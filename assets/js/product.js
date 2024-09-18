@@ -25,7 +25,7 @@ class Product {
                     let newProductHTML = templateHTML;
                     newProductHTML = newProductHTML.replace(/#product_cover#/g, product.product_cover ? product.product_cover : "/assets/images/products/no-image.jpg");
                     newProductHTML = newProductHTML.replace(/#product_name#/g, product.product_name);
-                    newProductHTML = newProductHTML.replace(/#product_description#/g, product.product_description_en ? product.product_description_en : "-- Not Found --" );
+                    newProductHTML = newProductHTML.replace(/#product_description#/g, product.product_description_en ? product.product_description_en : "-- Please contact our office for further details. --" );
                     newProductHTML = newProductHTML.replace(/#product_group#/g, product.product_group );
                     newProductHTML = newProductHTML.replace(/#product_brand#/g, product.product_brand );
 

@@ -53,7 +53,7 @@ class Quotation {
                     newProductHTML = newProductHTML.replace(/#id_product#/g, product.id_product);
                     newProductHTML = newProductHTML.replace(/#product_cover#/g, product.product_cover ? product.product_cover : "/assets/images/products/no-image.jpg");
                     newProductHTML = newProductHTML.replace(/#product_name#/g, product.product_name);
-                    newProductHTML = newProductHTML.replace(/#product_description#/g, product.product_description_en ? product.product_description_en : "-- Not Found --");
+                    newProductHTML = newProductHTML.replace(/#product_description#/g, product.product_description_en ? product.product_description_en : "-- Please contact our office for further details. --");
 
                     /*if (product.product_price) {
                         newProductHTML = newProductHTML.replace(/#BTNACTION#/g, `<button type="button" class="btn btn-success btn-sm">Buy Now</button>`);
