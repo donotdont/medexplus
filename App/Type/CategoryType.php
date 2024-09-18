@@ -22,6 +22,10 @@ class CategoryType extends ObjectType
 						'type' => Types::string(),
 						'description' => 'Category Name'
 					],
+					'icon_svg' => [
+						'type' => Types::string(),
+						'description' => 'Icon SVG File'
+					],
 					'count_item' => [
 						'type' => Types::int(),
 						'description' => 'Category Counter Item from Product'

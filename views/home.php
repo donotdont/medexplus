@@ -112,7 +112,9 @@
             </div>
             <div class="d-flex gap-2 w-100 justify-content-between">
               <div>
-                <h6 class="mb-0">Chemistry</h6>
+                <h6 class="mb-0"> 
+                  
+                </h6>
                 <span class="d-block small opacity-50">0 item(s)</span>
               </div>
             </div>
